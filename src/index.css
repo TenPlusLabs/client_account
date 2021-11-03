@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --main-color:#27abe2;
+  --color-dark:#1d2231;
+  --text-grey: #8390a2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+/* scrollbar styke */
+
+::-webkit-scrollbar{
+  width: 3px;
+  height: 6px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px rgba(14, 6, 6, 0.76);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2 ;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #fcfcfc;
+}
+
+/* body styling */
+
+.text-primary-p {
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-title {
+  color: #2e4a66;
+}
+
+.text-lightblue{
+  color: aqua;
+}
+
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+    "sidebar nav nav nav"
+    "sidebar main main main"
+  ;
+}
+
+
+#nav-toggle:checked ~ .main-content {
+  margin-left: 4.375rem;
+}
+
+#nav-toggle:checked ~ .main-content header {
+  width: calc(100% - 4.375rem);
+  left: 4.375rem;
+}
+
+.main-content {
+  transition: margin-left 300ms;
+  margin-left: 21.563rem;
+}
+
+@media only screen and (max-width: 978px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-rows: "nav" "main";
+  }
 }
