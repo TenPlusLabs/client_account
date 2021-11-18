@@ -1,10 +1,10 @@
 import './Navbar.css';
 
-const Navbar = ({ sidebarOpen, openSidebar }) => {
+const Navbar = () => {
     return(
         <header className=''>
              <h2>
-                <label for="nav-toggle" onClick={() => openSidebar()}>
+                <label for="nav-toggle">
                     <span class="las la-bars" ></span>
                 </label>
                 Dashboard
