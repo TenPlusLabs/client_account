@@ -1,0 +1,61 @@
+main{
+    margin-top: 5.313rem;
+    padding: 2rem 1.5rem; 
+    background: #f1f5f9;
+    min-height: calc(100vh - 5.625rem);
+}
+.cards{
+   background-color: #fff;
+}
+.cards>h2{
+    padding: 1.2rem;
+}
+.cards>hr{
+    color: #ccc;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.card-single{
+    width: 30vw;
+    min-height: 25vh ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2rem;
+    padding: 0.75rem;
+}
+.card-single>p{
+    font-weight: 550;
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+}
+.la-pen, .la-trash{
+    float: right;
+    color: #27abe2;
+    font-size: 1rem;
+}
+.card-single>hr{
+    margin-top: .25rem;
+}
+.card-single>.name{
+    text-transform: capitalize;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+}
+.card-single>.email{
+    color: rgb(133, 131, 131);
+    text-transform: lowercase;
+    font-weight: 400;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+.card-single>.homepage-link{
+    color: var(--main-color);
+    margin-top: 1.75rem;
+    cursor: pointer;
+}
+.card{
+   background-color: #fff;
+}

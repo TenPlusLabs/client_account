@@ -1,4 +1,4 @@
-.sidebar{
+#sidebar{
     width:21.563rem;
     position: fixed;
     top: 0;
@@ -44,22 +44,22 @@
     padding-right: 1rem;
 }
 
-#nav-toggle:checked + .sidebar {
+#nav-toggle:checked + #sidebar {
     width: 4.375rem;
 }
 
-#nav-toggle:checked + .sidebar .sidebar-brand,
-#nav-toggle:checked + .sidebar li{
+#nav-toggle:checked + #sidebar .sidebar-brand,
+#nav-toggle:checked + #sidebar li{
     padding-left: 1rem;
     text-align: center;
 }
 
-#nav-toggle:checked + .sidebar li a{
+#nav-toggle:checked + #sidebar li a{
     padding-left: 0rem;
 }
 
 
-#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
-#nav-toggle:checked + .sidebar li a span:last-child{
+#nav-toggle:checked + #sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + #sidebar li a span:last-child{
     display: none;
 }
