@@ -49,3 +49,22 @@
     cursor: pointer;
     transition: 1s;
 }
+
+@media only screen and (max-width:560px){
+    .review-button button{
+        padding: .5rem 1rem;
+        color: var(--main-color);
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    .review-details p:first-child{
+        color: rgb(65, 64, 64);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}

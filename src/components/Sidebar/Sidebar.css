@@ -63,3 +63,10 @@
 #nav-toggle:checked + #sidebar li a span:last-child{
     display: none;
 }
+
+.right{
+    margin-left: .5rem;
+}
+.mt-link-3{
+    margin-top: 1.5rem;
+}

@@ -35,5 +35,3 @@ const Pending = () => {
         </main>
     )
 }
-
-export default Pending
