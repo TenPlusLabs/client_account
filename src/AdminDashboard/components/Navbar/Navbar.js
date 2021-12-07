@@ -1,10 +1,11 @@
-import './Navbar.css';
+import React from 'react'
 
-const Navbar = ({ sidebarOpen, openSidebar }) => {
-    return(
+
+const Navbar = () => {
+    return (
         <header className=''>
-             <h2>
-                <label for="nav-toggle" onClick={() => openSidebar()}>
+                <h2>
+                <label for="nav-toggle">
                     <span class="las la-bars" ></span>
                 </label>
                 Dashboard
@@ -21,7 +22,7 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                 </div>
             </div>
         </header>
-    );
+    )
 }
 
-export default Navbar;
+export default Navbar

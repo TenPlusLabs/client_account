@@ -11,11 +11,11 @@ const Order = () => {
     return (
         <main>            
             <div class="cards">
-                    <h2>Orders</h2>
+                    <h2>Order</h2>
                     <hr/>
                     <Tabs>
                         <TabList className='tab'>
-                            <Tab> 
+                            <Tab id='tab'> 
                                 <button class="tablinks active">Open Orders (0)</button>
                             
                             </Tab>
@@ -37,8 +37,32 @@ const Order = () => {
                                     <button>Rate this Product</button>
                                 </div>
                             </div>
+                            <div className='order-container'>
+                                <div className='order-image'></div>
+                                <div className='order-details'>
+                                    <p>100000mah ultra slim fast charging power banks</p>
+                                    <p>Order no: 34561234</p>
+                                    <p className='status'>Delivered</p>
+                                    <p> on 24-09-19</p>
+                                </div>
+                                <div className='order-button'>
+                                    <button>Rate this Product</button>
+                                </div>
+                            </div>
                         </TabPanel>
                         <TabPanel>
+                            <div className='order-container'>
+                                <div className='order-image'></div>
+                                <div className='order-details'>
+                                    <p>100000mah ultra slim fast charging power banks</p>
+                                    <p>Order no: 34561234</p>
+                                    <p className='n-status'>Not-delivered</p>
+                                    <p> on 24-09-19</p>
+                                </div>
+                                <div className='order-button'>
+                                    <button>Rate this Product</button>
+                                </div>
+                            </div>
                             <div className='order-container'>
                                 <div className='order-image'></div>
                                 <div className='order-details'>

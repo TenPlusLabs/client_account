@@ -147,3 +147,52 @@
 /* TabList, Tab{
   border: none;
 } */
+#tab{
+  border-top: none !important;
+}
+
+/* mobile view */
+
+@media only screen and (max-width:560px) {
+  .order-container{
+    display: block;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 2px 3px 2px 1px rgb(65, 64, 64);;
+    border-radius: 8px;
+    padding:1.5rem;
+    margin: 1.75rem;
+}
+.order-image{
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #000;
+  margin: .625rem;
+}
+.order-details p:first-child{
+  color: rgb(65, 64, 64);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.order-details p:nth-child(2){
+  font-weight: 500;
+  color:rgb(124, 119, 119)
+}
+.order-details p:last-child{
+  color:#000;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.order-button button{
+  padding: 1rem 2rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+}

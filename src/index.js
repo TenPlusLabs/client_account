@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import Homepage from './AdminDashboard/components/Pages/Homepage'
 import { BrowserRouter } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Homepage/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
