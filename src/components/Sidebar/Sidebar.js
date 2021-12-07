@@ -2,54 +2,6 @@ import React from 'react'
 import './Sidebar.css'
 import { NavLink } from "react-router-dom";
 
-const routes = [
-    {
-        path: "/",
-        exact: true,
-        sidebar: () => <div>Account</div>,
-        main:() => <h1>Account</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Order</div>,
-        main:() => <h1>Order</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Order</div>,
-        main:() => <h1>Order</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>yy</div>,
-        main:() => <h1>yy</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Messages</div>,
-        main:() => <h1>Messages</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Details</div>,
-        main:() => <h1>Details</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Address book</div>,
-        main:() => <h1>Address book</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Change Password</div>,
-        main:() => <h1>Change Password</h1>
-    },
-    {
-        path: "/",
-        sidebar: () => <div>Logout</div>,
-        main:() => <h1>Logout</h1>
-    }
-]
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     return (

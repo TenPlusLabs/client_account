@@ -11,7 +11,7 @@ const Order = () => {
     return (
         <main>            
             <div class="cards">
-                    <h2>Orders</h2>
+                    <h2>Order</h2>
                     <hr/>
                     <Tabs>
                         <TabList className='tab'>
