@@ -48,19 +48,88 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <NavLink to="/Wallet"><span class="las la-igloo"></span>
+                     <span>Products Inventory</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Transactions"><span class="las la-igloo"></span>
+                    <span>Projects</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Refferal"><span class="las la-igloo"></span>
+                    <span>Quotes</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Settings"><span class="las la-igloo"></span>
+                    <span>Invoice</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="dashboard/Loans"><span class="las la-igloo"></span>
+                    <span>Cart</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Wallet"><span class="las la-igloo"></span>
+                     <span>Coupons</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Transactions"><span class="las la-igloo"></span>
+                    <span>Ratings and Reviews</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Refferal"><span class="las la-igloo mb-3"></span>
+                    <span>Payments</span></NavLink>
+                </li>
+                <hr/>
+                <li>
+                    <NavLink to="/Settings"><span class="las la-igloo"></span>
+                    <span>Pages</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="dashboard/Loans"><span class="las la-igloo"></span>
+                    <span>Programs</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Wallet"><span class="las la-igloo"></span>
+                     <span>Coupons</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Transactions"><span class="las la-igloo"></span>
+                    <span>Applications</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Refferal"><span class="las la-igloo"></span>
+                    <span>Subscriptions</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Settings"><span class="las la-igloo "></span>
+                    <span>Payments</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="dashboard/Loans"><span class="las la-igloo mb-3"></span>
+                    <span>User Accounts</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Wallet"><span class="las la-igloo mt-1"></span>
                      <span>Pages</span></NavLink>
                 </li>
                 <li>
                     <NavLink to="/Transactions"><span class="las la-igloo"></span>
-                    <span>comments</span></NavLink>
+                    <span>Product Catalogue</span></NavLink>
                 </li>
                 <li>
                     <NavLink to="/Refferal"><span class="las la-igloo"></span>
-                    <span>Refferal</span></NavLink>
+                    <span>Links</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Settings"><span class="las la-igloo"></span>
-                    <span>Forms</span></NavLink>
+                    <NavLink to="/Settings"><span class="las la-igloo mb-3"></span>
+                    <span>Members</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="dashboard/Loans"><span class="las la-igloo mt-1"></span>
+                    <span>Users</span></NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Wallet"><span class="las la-igloo"></span>
+                     <span>Profile</span></NavLink>
                 </li>
             </ul>
         </div>
