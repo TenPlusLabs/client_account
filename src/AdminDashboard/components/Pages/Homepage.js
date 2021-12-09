@@ -3,6 +3,7 @@ import Main from '../Main'
 import Navbar from '../Navbar/Navbar'
 import Sidebar from '../Sidebar'
 import '../index.css'
+import Pages from './Pages/Pages'
 
 const Homepage = () => {
     return (
@@ -10,7 +11,8 @@ const Homepage = () => {
             <Sidebar/>
             <div className='main-content'>
                 <Navbar/>
-                <Main/>
+                {/* <Main/> */}
+                <Pages />
             </div>
         </div>
     )
