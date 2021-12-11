@@ -2,6 +2,7 @@ import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
+
 const Main = () => {
     return (
         <main>
@@ -38,10 +39,102 @@ const Main = () => {
                             </TabList>
 
                             <TabPanel>
-                            <div className='container'>
-                                <div className='row'>
-                                    <div className='box border shadow w-100 h-100'>
-                                        <div className='float-left'></div>
+                            <div className='container-fluid'>
+                                <div className='row mt-5'>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='col-md-4 p-3 border shadow '>
+                                        <div>
+                                            <div className='float-left'>
+                                                <h4>Total Page Views</h4>
+                                            </div>
+                                            <div className='float-right'>
+                                                kkk
+                                            </div>
+                                        </div>
+                                        <hr className='mt-5'/>
+                                        <div>
+                                            <h3>23,568</h3>
+                                            <p>Vs previous days 7 (28,211)</p>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -54,39 +147,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>            
-            <div class="cards">
-                <div className='card-container'>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                </div>
-            </div>
-        </main>
+                   </main>
     )
 }
 
