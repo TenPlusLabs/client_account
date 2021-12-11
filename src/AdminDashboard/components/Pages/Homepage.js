@@ -3,6 +3,7 @@ import Main from '../Main'
 import Navbar from '../Navbar/Navbar'
 import Sidebar from '../Sidebar'
 import '../index.css'
+//import Pages from './Pages/Pages'
 import { Route, Routes } from 'react-router-dom'
 
 const Homepage = () => {
@@ -11,10 +12,11 @@ const Homepage = () => {
             <Sidebar/>
             <div className='main-content'>
                 <Navbar/>
+                {/* <Main/> */}
                 <Routes>
                     <Route exact path='/' element={<Main/>} />
+                    <Route exact path='/pages' element={<Pages/>}/>
                 </Routes>
-                
             </div>
         </div>
     )
