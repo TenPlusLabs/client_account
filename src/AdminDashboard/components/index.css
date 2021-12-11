@@ -52,10 +52,11 @@
     padding-left: .5rem;
     display: block;
     color:  rgba(255, 255, 255, 0.6) !important;
-    font-size: 1.1rem;
+    font-size: smaller;
+    overflow-y:scroll;
 }
 
-.sidebar-menu a>img{
+.sidebar-menu a>span{
    margin-right: .25rem !important;
 }
 
