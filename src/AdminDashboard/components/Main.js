@@ -2,7 +2,7 @@ import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './Main.css'
-import { LineChart, Line } from 'recharts';
+//import { LineChart, Line } from 'recharts';
 
 
 
@@ -31,9 +31,9 @@ const TotalViews = (props) => {
         <div>
             <h3>{value}</h3>
             <p>{details}</p>
-            <LineChart width={400} height={400} data={data}>
+            {/* <LineChart width={400} height={400} data={data}>
                 <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            </LineChart>
+            </LineChart> */}
         </div>
 
     </div>
@@ -70,7 +70,7 @@ const Main = (props) => {    return (
                                         position:'absolute',
                                         display:'block',
                                         transform:'translate(50,50)'
-                                    }}>a</span>
+                                    }}></span>
                                 </div>
 
                             </div>

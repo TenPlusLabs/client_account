@@ -23,15 +23,15 @@ const Sidebar = () => {
                     <span>Post</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="dashboard/Loans"><span class="las la-igloo"></span>
+                    <NavLink to="/media"><span class="las la-igloo"></span>
                     <span>Media</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Wallet"><span class="las la-igloo"></span>
+                    <NavLink to="/pages"><span class="las la-igloo"></span>
                      <span>Pages</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Transactions"><span class="las la-igloo"></span>
+                    <NavLink to="/comment"><span class="las la-igloo"></span>
                     <span>comments</span></NavLink>
                 </li>
                 <li>
