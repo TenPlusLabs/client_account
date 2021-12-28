@@ -1,12 +1,25 @@
 import React from 'react'
 import img from '../../../../assets/lana.jpg'
+import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
 import './Comment.css'
 
 const Comment = () => {
     return (
         <main>
-            <div className='container-fluid mt-5'>
-                <div className='row'>
+        <div className='container-fluid mt-5'>
+                <div className='row ml-5'>
+    <Tabs>
+            <TabList className='col-md-5 d-flex justify-content-around ml-5'>
+                <Tab><button className='btn active'>All(3)</button></Tab>
+                <Tab><button className='btn'>Mine(0)</button></Tab>
+                <Tab><button className='btn active'>Pending(3)</button></Tab>
+                <Tab><button className='btn'>Approved(0)</button></Tab>
+                <Tab><button className='btn active'>Spam(3)</button></Tab>
+                <Tab><button className='btn'>Trash(0)</button></Tab>
+            </TabList>
+
+            <TabPanel>
+                
                     <div className='col-12'>
                     <table className=' bg-light p-5 shadow text-blue table-responsive'>
                         <thead>
@@ -49,8 +62,13 @@ const Comment = () => {
                         </tbody>
                     </table>
                     </div>
-                </div>
-            </div>
+              
+        </TabPanel>
+        <TabPanel>
+        </TabPanel>
+    </Tabs>
+    </div>
+            </div>   
         </main>
     )
 }
