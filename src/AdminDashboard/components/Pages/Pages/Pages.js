@@ -224,7 +224,7 @@ function Pages() {
                         </Tabs>
                     </div>
                 </div>
-            </div>
+            </div>            
         </main>
     )
 }
