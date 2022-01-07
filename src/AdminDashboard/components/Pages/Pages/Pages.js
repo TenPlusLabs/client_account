@@ -53,7 +53,7 @@ function Pages() {
                         <div className='float-left d-flex justify-content-between'>
                             <div className=' '>
                                 {/* <img src='' alt='' width='20rem' height='2rem' className='img-fluid' /> */}
-                                <div className='mt-3' style={{width:'50px', height:'50px', background:'blue', borderRadius:'50%', content:'a'}} />
+                             <div className='mt-3' style={{width:'50px', height:'50px', background:'blue', borderRadius:'50%', content:'a'}} />
 
                             </div>
                             <div className='ml-3 mt-4'>
