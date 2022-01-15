@@ -1,6 +1,12 @@
 td{
     padding: .75rem;
+    
 }
+
+tr{
+    /* height:30vh !important; */
+}
+
 th{
     padding:.75rem;
     color:'#ccc'
@@ -14,4 +20,8 @@ th{
 .page_title:hover>.display-none{
     display: flex !important;
     margin-left: .5rem;
+}
+
+.margin{
+    margin-right: 2.5rem !important;
 }
