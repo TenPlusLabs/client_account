@@ -3,12 +3,12 @@ import './Sidebar.css'
 import { NavLink } from "react-router-dom";
 
 
-const Sidebar = ({ sidebarOpen, closeSidebar }) => {
+const Sidebar = () => {
     return (
        
-            <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
+            <div className='' id="sidebar">
                 <input type="checkbox" name="" id="nav-toggle"/>
-                <i className="las la-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
+                {/* <i className="las la-times" id="sidebarIcon" onClick={() => closeSidebar()}></i> */}
                 <div class="sidebar-brand">
                     <h2><span class="las la-compress-arrows-alt"></span>
                         <span>Dashboard</span>

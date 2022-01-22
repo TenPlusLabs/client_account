@@ -11,21 +11,14 @@ import Address from './components/Pages/Address-book/Address';
 
 const App = () => {
 
-const [sidebarOpen, setSidebarOpen] = useState(false);
 
-const openSidebar = () =>{
-  setSidebarOpen(true);
-}
-const closeSidebar = () =>{
-  setSidebarOpen(false);
-}
   return (
     <div className="">
       <h1>TenPlus</h1>
       
-      <Sidebar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+      <Sidebar />
       <div className='main-content'>
-        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+        <Navbar />
         
       
       <Routes>
