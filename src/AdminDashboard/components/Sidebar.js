@@ -39,7 +39,7 @@ const Sidebar = () => {
     <div id="sidebar" className="active" style={{overflow: 'auto'}}>
         <div className="sidebar-wrapper active">
             <div className="sidebar-header">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex bg-primary justify-content-between">
             
                 </div>
             </div>
