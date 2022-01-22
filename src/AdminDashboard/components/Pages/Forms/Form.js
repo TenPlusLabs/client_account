@@ -33,11 +33,11 @@ const Table = (props) =>{
 
         <tr>
             <td>{id}</td>
-            <td className='page_title'  colspan="2" > {form_name}
+            <td className='page_title'  colspan="2" style={{width:'200px'}}> {form_name}
                 <div className='d-flex display-none'>
-                <button className='btn btn-primary mt-3 mr-3' >View</button>
-                <button className='btn btn-primary mt-3 mr-3'>Edit</button>
-                <button className='btn btn-primary mt-3'>Delete</button>
+                <span className='text-primary mt-3 mr-3' >View</span>
+                <span className='text-secondary mt-3 mr-3'>Edit</span>
+                <span className='text-danger mt-3'>Delete</span>
                 </div>
              </td>
             <td>{form_page}</td>
@@ -81,7 +81,7 @@ const Form = (props) => {
     return (
         <main>
         <div className='container-fluid mt-5'>
-                <div className='row ml-5 '>
+                <div className='row ml-0'>
     <Tabs>
         <div className='d-flex justify-content-between mb-3'>
             <TabList className='col-md-5 d-flex justify-content-around ml-5'>

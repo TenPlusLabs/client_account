@@ -21,10 +21,10 @@ const Table = (props) =>{
 
         <tr>
             <td>{id}</td>
-            <td className='name'> {name}
+             <td className='page_title' style={{width:'200px'}}> {name}
                 <div className='d-flex display-none'>
-                <button className='btn btn-primary mt-3 mr-3'>Edit</button>
-                <button className='btn btn-primary mt-3'>Delete</button>
+                <span className='text-secondary mt-3 mr-3'>Edit</span>
+                <span className='text-danger mt-3'>Delete</span>
                 </div>
              </td>
             <td>{last_name}</td>
@@ -41,7 +41,7 @@ const Table = (props) =>{
         </tr>
     )
     }
-const Customer = (props) => {
+const ContactCustomer = (props) => {
    
     return (
         <main>
@@ -75,7 +75,7 @@ const Customer = (props) => {
                                 <th>Name</th>
                                 <th>Country</th>
                                 <th>State</th>
-                                <th>Customer</th>
+                                <th>C_Customer</th>
                                 <th>Wallet Amount</th>
                                 <th>Order Amount</th>
                             </tr>
@@ -98,4 +98,4 @@ const Customer = (props) => {
     )
 }
 
-export default Customer
+export default ContactCustomer

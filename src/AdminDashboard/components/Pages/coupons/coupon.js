@@ -1,7 +1,7 @@
 import React, {useState} from 'react' 
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
-import './Pages.css'
-import BasicModal from './Modal';
+import '../Pages/Pages.css'
+import BasicModal from '../Pages/Modal';
 
 
 
@@ -26,9 +26,9 @@ const Table = (props) =>{
 
         <tr>
             <td>{id}</td>
-            <td className='page_title' style={{width:'150px'}}> {page_title}
+            <td className='page_title'> {page_title}
                 <div className='d-flex display-none'>
-                <span className='text-secondary mt-3 mr-3'>Edit</span><span className='text-danger mt-3'>Delete</span>
+                <span className='text-secondary mt-3 mr-3'>Change</span>
                 </div>
              </td>
             <td>{page_url}</td>
@@ -41,7 +41,7 @@ const Table = (props) =>{
         </tr>
     )
     }
-const Page = (props) => {
+const Coupons = (props) => {
    
     return (
         <main>
@@ -94,4 +94,4 @@ const Page = (props) => {
     )
 }
 
-export default Page
+export default Coupons

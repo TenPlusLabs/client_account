@@ -1,7 +1,7 @@
 import React, {useState} from 'react' 
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
-import './Pages.css'
-import BasicModal from './Modal';
+import '../Pages/Pages.css'
+// import BasicModal from './Modal';
 
 
 
@@ -38,10 +38,11 @@ const Table = (props) =>{
             <td>{visit_today}</td>
             <td>{visit_day}</td>
             <td>{visit_month}</td>
+            <td><span className='rounded bg-success p-2 text-white'>Links</span></td>
         </tr>
     )
     }
-const Page = (props) => {
+const Members = (props) => {
    
     return (
         <main>
@@ -57,7 +58,7 @@ const Page = (props) => {
                 {/* <Tab><BasicModal /></Tab> */}
                 {/* <BasicModal /> */}
             </TabList>
-            <div className='margin'> <BasicModal /> </div>
+            {/* <div className='margin'> <BasicModal /> </div> */}
         </div>
             <TabPanel>
                 
@@ -65,15 +66,28 @@ const Page = (props) => {
                     <table className=' bg-light p-5 shadow text-blue table-responsive'>
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Page Title</th>
-                                <th>Page URL</th>
-                                <th>Date Published</th>
-                                <th>Date Description</th>
-                                <th>Meta data</th>
-                                <th>No of visit's today</th>
-                                <th>No of visit's in 7 days</th>
-                                <th>No of visit's in 1 month</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Website</th>
+                                <th>Facebook</th>
+                                <th>Instagram</th>
+                                <th>Company</th>
+                                <th>Education</th>
+                                <th>Active Links</th>
+                                <th>Suspended Links</th>
+                                <th>Total earnings</th>
+                                <th>Top Performing Social Platform</th>
+{/*             
+(Clicking any of Active or 
+Suspended Links presents a 
+modal showing a list of all 
+the links whether active or 
+suspended, with their 
+earning and reason for 
+suspension), , 
+for that user */}
                             </tr>
                         </thead>
                         <tbody>
@@ -94,4 +108,4 @@ const Page = (props) => {
     )
 }
 
-export default Page
+export default Members
