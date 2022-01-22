@@ -6,16 +6,16 @@ import '../Pages/Pages.css'
 
 
 const Rows = [
-    {id:1, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' },
-    {id:2, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' },
-    {id:3, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' },
-    {id:4, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' },
-    {id:5, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' },
-    {id:6, page_title:'TenPlu Lab', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' }
+    {id:1, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2', total_earning:'#200', top_performance_platform:'twitter',status:'suspended' },
+    {id:2, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2' , total_earning:'#200', top_performance_platform:'twitter',status:'active'},
+    {id:3, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2', total_earning:'#200', top_performance_platform:'twitter',status:'suspended' },
+    {id:4, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2', total_earning:'#200', top_performance_platform:'twitter',status:'active'},
+    {id:5, page_title:'TenPlus Labs', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2', total_earning:'#200', top_performance_platform:'twitter',status:'suspended'},
+    {id:6, page_title:'TenPlu Lab', page_url:'AJAPswenky', date_published:'05-01-2021', date_description:'0', meta_data:'2021/05/05', visit_day:'0', visit_today:'5', visit_month:'2', total_earning:'#200', top_performance_platform:'twitter',status:'active'}
 ]
 
 const Table = (props) =>{
-    const {id, page_title,page_url,date_published,date_description,meta_data, visit_today, visit_day, visit_month  }  = props;
+    const {id, page_title,page_url,date_published,date_description,meta_data, visit_today, visit_day, visit_month,total_earning,top_pp}  = props;
    
     // const [openModal, setOpenModal] = useState('');
     // const handleShow = () => {
@@ -39,6 +39,9 @@ const Table = (props) =>{
             <td>{visit_day}</td>
             <td>{visit_month}</td>
             <td><span className='rounded bg-success p-2 text-white'>Links</span></td>
+            <td><span className='rounded bg-secondary p-2 text-white'>Links</span></td>
+            <td>{total_earning}</td>
+            <td>{top_pp}</td>
         </tr>
     )
     }
@@ -52,9 +55,8 @@ const Members = (props) => {
         <div className='d-flex justify-content-between mb-3'>
             <TabList className='col-md-5 d-flex justify-content-around ml-5'>
                 <Tab><button className='btn active'>All(3)</button></Tab>
-                <Tab><button className='btn'>Published(0)</button></Tab>
-                <Tab><button className='btn active'>Draft(3)</button></Tab>
-                <Tab><button className='btn'>Bin(0)</button></Tab>
+                <Tab><button className='btn'>Active Members</button></Tab>
+                <Tab><button className='btn active'>Suspended Members</button></Tab>
                 {/* <Tab><BasicModal /></Tab> */}
                 {/* <BasicModal /> */}
             </TabList>
@@ -92,7 +94,7 @@ for that user */}
                         </thead>
                         <tbody>
                         {Rows.map((Row) =>
-                    <Table key={Row.id} id={Row.id} page_title={Row.page_title} date_published={Row.date_published} date_description={Row.date_description} meta_data={Row.meta_data} page_url={Row.page_url} visit_day={Row.visit_day} visit_today={Row.visit_today} visit_month={Row.visit_month} />
+                    <Table key={Row.id} id={Row.id} page_title={Row.page_title} date_published={Row.date_published} date_description={Row.date_description} meta_data={Row.meta_data} page_url={Row.page_url} visit_day={Row.visit_day} visit_today={Row.visit_today} visit_month={Row.visit_month} total_earning={Row.total_earning} top_pp={Row.top_performance_platform} />
                     )} 
                         </tbody>
                     </table>
@@ -100,6 +102,65 @@ for that user */}
             
         </TabPanel>
         <TabPanel>
+                
+                <div className='col-12'>
+                <table className=' bg-light p-5 shadow text-blue table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Website</th>
+                            <th>Facebook</th>
+                            <th>Instagram</th>
+                            <th>Company</th>
+                            <th>Education</th>
+                            <th>Active Links</th>
+                            <th>Suspended Links</th>
+                            <th>Total earnings</th>
+                            <th>Top Performing Social Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {Rows.map((Row) =>
+                <Table key={Row.id} id={Row.id} page_title={Row.page_title} date_published={Row.date_published} date_description={Row.date_description} meta_data={Row.meta_data} page_url={Row.page_url} visit_day={Row.visit_day} visit_today={Row.visit_today} visit_month={Row.visit_month} total_earning={Row.total_earning} top_pp={Row.top_performance_platform} />
+                )} 
+                    </tbody>
+                </table>
+                </div>
+        
+    </TabPanel>
+
+    <TabPanel>
+                
+                    <div className='col-12'>
+                    <table className=' bg-light p-5 shadow text-blue table-responsive'>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Website</th>
+                                <th>Facebook</th>
+                                <th>Instagram</th>
+                                <th>Company</th>
+                                <th>Education</th>
+                                <th>Active Links</th>
+                                <th>Suspended Links</th>
+                                <th>Total earnings</th>
+                                <th>Top Performing Social Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {Rows.map((Row) =>
+                    <Table key={Row.id} id={Row.id} page_title={Row.page_title} date_published={Row.date_published} date_description={Row.date_description} meta_data={Row.meta_data} page_url={Row.page_url} visit_day={Row.visit_day} visit_today={Row.visit_today} visit_month={Row.visit_month} total_earning={Row.total_earning} top_pp={Row.top_performance_platform} />
+                    )} 
+                        </tbody>
+                    </table>
+                    </div>
+            
         </TabPanel>
     </Tabs>
     </div>
