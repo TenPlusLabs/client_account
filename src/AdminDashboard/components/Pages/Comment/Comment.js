@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../../../../assets/lana.jpg'
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
 import './Comment.css'
-
+import '../Pages/Pages.css'
 
 const Comments = [
     {id:1, file:img, author:'AJAPswenky', upload:'mine', comment:'0', date:'2021/05/05', commentBody:'dszfgijetboijbjdfvbjngdbjnbfdjbtbjjnetnbdfjbdfjbedgtjnbgtrbjkometbkjofdbjkoefberjo' },
@@ -23,11 +23,17 @@ const Table = (props) =>{
     const { file,author,upload,comment, date,commentBody }  = props;
     return(
         <tr>
+            <td><input type='checkbox' /></td>
             <td>
-                <img src={file} alt='' className='img-fluid comment-img'/>
+                <img src={file} alt='' style={{width:'200px'}} className='img-fluid comment-img'/>
             </td>
             <td>{author}</td>
-            <td>{commentBody}</td>
+            <td className='page_title'>
+                {commentBody}
+                <div className='d-flex display-none'>
+                <span className='text-secondary mt-3 mr-3'>Edit</span><span className='text-danger mt-3'>Delete</span>
+                </div>
+             </td>
             <td>{upload}</td>
             <td>{comment}</td>
             <td>{date}</td>
@@ -61,17 +67,18 @@ const Comment = (props) => {
                 <table className=' bg-light p-5 shadow text-blue table-responsive'>
                     <thead>
                         <tr>
-                            <td>File</td>
-                            <td>Author</td>
-                            <th>Cooment Body</th>
-                            <td>Uploaded to</td>
-                            <td><i className='las la-comment'></i></td>
-                            <td>Date</td>
+                            <th><input type='checkbox' /></th>
+                            <th>File</th>
+                            <th>Author</th>
+                            <th>Cooment</th>
+                            <th>Uploaded to</th>
+                            <th><i className='las la-comment'></i></th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
                     {Comments.map((Comment) =>
-                <Table key={Comment.id} file={Comment.file} upload={Comment.upload} date={Comment.date} author={Comment.author} comment={Comment.comment} commentBody={Comments.commentBody} />
+                <Table key={Comment.id} file={Comment.file} upload={Comment.upload} date={Comment.date} author={Comment.author} comment={Comment.comment} commentBody={Comment.commentBody} />
                 )} 
                     </tbody>
                 </table>

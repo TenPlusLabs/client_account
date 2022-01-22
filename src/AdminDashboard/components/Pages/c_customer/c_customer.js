@@ -21,10 +21,10 @@ const Table = (props) =>{
 
         <tr>
             <td>{id}</td>
-             <td className='page_title'> {name}
+             <td className='page_title' style={{width:'200px'}}> {name}
                 <div className='d-flex display-none'>
-                <button className='btn btn-secondary mt-3 mr-3'>Edit</button>
-                <button className='btn btn-danger mt-3'>Delete</button>
+                <span className='text-secondary mt-3 mr-3'>Edit</span>
+                <span className='text-danger mt-3'>Delete</span>
                 </div>
              </td>
             <td>{last_name}</td>

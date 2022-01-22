@@ -28,7 +28,7 @@ const Table = (props) =>{
             <td>{id}</td>
             <td className='page_title'> {page_title}
                 <div className='d-flex display-none'>
-                <button className='btn btn-secondary mt-3 mr-3'>Change</button>
+                <span className='text-secondary mt-3 mr-3'>Change</span>
                 </div>
              </td>
             <td>{page_url}</td>

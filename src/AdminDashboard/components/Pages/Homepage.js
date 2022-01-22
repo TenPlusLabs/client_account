@@ -31,6 +31,8 @@ import PendingProject from './c_projects/pending_Project'
 import OngoingProject from './c_projects/ongoing_projects'
 import CompProject from './c_projects/comp_projects'
 import Invoice from './invoices/invoice'
+import Links from './links/links'
+import Members from './members/members'
 // import { Portal } from '@mui/material'
 // import Sidebar1 from '../Sidebar1'
 
@@ -69,6 +71,8 @@ const Homepage = () => {
                     <Route path='ongoing_project' element={<OngoingProject />} />
                     <Route path='completed_project' element={<CompProject />} />
                     <Route path='invoice' element={<Invoice />} />
+                    <Route path='links' element={<Links />} />
+                    <Route path='members' element={<Members />} />
                 </Routes>
             </div>
         // </div>

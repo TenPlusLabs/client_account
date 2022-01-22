@@ -193,10 +193,10 @@ const Sidebar = () => {
                                     <a href="component-badge.html">Badge</a>
                                 </li>
                                 <li className="submenu-item ">
-                                    <NavLink to='customer'>Link</NavLink>
+                                    <NavLink to='links'>Link</NavLink>
                                 </li>
                                 <li className="submenu-item">
-                                    <NavLink to='customer'>Members</NavLink>
+                                    <NavLink to='members'>Members</NavLink>
                                 </li>
                             </ul>
                         </li>
@@ -206,7 +206,7 @@ const Sidebar = () => {
                                 <i class="las la-key" style={{fontSize: '20px'}}></i>
                                 <span>Accounts</span>
                             </a>
-                            <ul className={`submenu ${list == 5 && 'active'}`}>
+                            <ul className={`submenu ${list === 5 && 'active'}`}>
                                 <li className="submenu-item ">
                                     <NavLink to='/user'>Users</NavLink>
                                 </li>

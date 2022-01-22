@@ -29,14 +29,14 @@ const Table = (props) =>{
 
         <tr>
             <td>{id}</td>
-            <td className='page_title'> 
+            <td className='page_title' style={{width: '200px'}}> 
                 {title}
                 <div className='d-flex display-none'>
-                    <button className='btn btn-primary mt-3 mr-3'>Add</button>
+                    <span className='text-primary mt-3 mr-3'>Add</span>
                     <br/>
-                    <button className='btn btn-secondary mt-3 mr-3'>Edit</button>
+                    <span className='text-secondary mt-3 mr-3'>Edit</span>
                     <br/>
-                    <button className='btn btn-danger mt-3'>Delete</button>
+                    <span className='text-danger mt-3'>Delete</span>
                 </div>
              </td>
             <td>{author}</td>
