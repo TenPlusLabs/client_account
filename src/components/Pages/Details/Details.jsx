@@ -32,7 +32,7 @@ const Details = () => {
     return (
         <main>            
             <div class="cards">
-                <h2>Details</h2>
+                <h2>My Details</h2>
                 <hr/>
                 <form onSubmit='formik.handleSubmit'>
                     <div className='form-wrap'>

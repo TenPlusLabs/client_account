@@ -14,13 +14,13 @@ const Order = () => {
                     <h2>Order</h2>
                     <hr/>
                     <Tabs>
-                        <TabList className='tab'>
+                        <TabList className='order-tab'>
                             <Tab id='tab'> 
-                                <button class="tablinks active">Open Orders (0)</button>
+                                <button class=" active">Open Orders (0)</button>
                             
                             </Tab>
                             <Tab>
-                            <button class="tablinks">Closed Orders (0)</button>
+                            <button class="">Closed Orders (0)</button>
                             </Tab>
                         </TabList>
 

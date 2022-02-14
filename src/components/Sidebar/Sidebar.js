@@ -1,14 +1,15 @@
 import React from 'react'
 import './Sidebar.css'
+
 import { NavLink } from "react-router-dom";
 
 
-const Sidebar = ({ sidebarOpen, closeSidebar }) => {
+const Sidebar = () => {
     return (
        
-            <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
-                <input type="checkbox" name="" id="nav-toggle"/>
-                <i className="las la-times" id="sidebarIcon" onClick={() => closeSidebar()}></i>
+            <div className=''id="sidebar">
+                {/* <input type="checkbox" name="" id="nav-toggle"/> */}
+                <i className="las la-times" id="sidebarIcon" ></i>
                 <div class="sidebar-brand">
                     <h2><span class="las la-compress-arrows-alt"></span>
                         <span>Dashboard</span>
@@ -21,35 +22,48 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                             <span>My Account</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Order" class="active"><span class="las la-users"></span>
+                            <NavLink to="order" class=""><span class="las la-users"></span>
                             <span>Orders</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Ticket"><span class="las la-ship"></span>
+                            <NavLink to="ticket"><span class="las la-ship"></span>
                             <span>Ticket</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Pending-reviews"><span class="las la-clipboard-list"></span>
+                            <NavLink to="pending-reviews"><span class="las la-clipboard-list"></span>
                             <span>Pending Reviews</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Messages"><span class="las la-circle"></span>
+                            
+                                <NavLink to='' class="btn dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                                    Billings
+                                </NavLink>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <NavLink class="dropdown-item text-dark" to="quotes">Quotes</NavLink>
+                                    <NavLink  class="dropdown-item  text-dark" to="invoice">Invoice</NavLink>
+                                    <NavLink  class="dropdown-item text-dark" to="add-funds">Add Funds</NavLink>
+                                </div>
+                            
+                        </li>
+                        <li>
+                            <NavLink to="messages"><span class="las la-circle"></span>
                             <span>Messages</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Details"><span class="las la-receipt"></span>
-                            <span>Details</span></NavLink>
+                            <NavLink to="details"><span class="las la-receipt"></span>
+                            <span>My Details</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Address-book"><span class="las la-circle"></span>
+                            <NavLink to="address-book"><span class="las la-circle"></span>
                             <span>Address Book</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="Change-password"><span class="las la-circle"></span>
+                            <NavLink to="change-password"><span class="las la-circle"></span>
                             <span>Change Password</span></NavLink>
                         </li>
                         <li>
-                            <NavLink to="Log-out"><span class="las la-circle"></span>
+                            <NavLink to="log-out"><span class="las la-circle"></span>
                             <span>Log out</span></NavLink>
                         </li>
                     </ul>

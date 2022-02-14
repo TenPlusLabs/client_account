@@ -9,14 +9,14 @@
      color: rgb(226, 225, 225);
  }
 
- .tab {
+ .order-tab {
     overflow: hidden;
     border-bottom: 1px solid #ccc !important;
     background-color: #fff !important;
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .order-tab button {
     background-color: transparent;
     float: left;
     border: none;
@@ -31,7 +31,7 @@
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
+  .order-tab button:hover {
     background-color: #ddd;
   }
   
