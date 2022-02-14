@@ -13,14 +13,38 @@ const Order = () => {
             <div class="cards">
                     <h2>Order</h2>
                     <hr/>
+                    
                     <Tabs>
+                    <div class='p-3 mb-5'>
+                        <div class='float-left mt-3 mb-3 d-flex'>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Status
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/#">Complete</a>
+                                    <a class="dropdown-item" href="/#">InComplete</a>
+                                    <a class="dropdown-item" href=".#">In progress</a>
+                                    <a class="dropdown-item" href=".#">Not Started</a>
+                                </div>
+                            </div>
+                          <div class=' ml-2 d-flex'>
+                                <div class='round-circle-complete ml-2'></div>
+                                <div class='ml-2'> Incomplete</div>
+                            </div>
+
+                        </div>
+                        <div class='float-right mt-3 mb-3'>
+                            <button class='btn btn-primary'>View Chart</button>
+                        </div>
+                    </div>
                         <TabList className='order-tab'>
                             <Tab id='tab'> 
-                                <button class=" active">Open Orders (0)</button>
+                                <button class="mt-2 active">Open Orders (0)</button>
                             
                             </Tab>
                             <Tab>
-                            <button class="">Closed Orders (0)</button>
+                            <button class="mt-2">Closed Orders (0)</button>
                             </Tab>
                         </TabList>
 

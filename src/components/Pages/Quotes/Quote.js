@@ -118,18 +118,38 @@ const Quote = (props) => {
                                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
-                                                        <div class="modal-header bg-grey">
+                                                        <div class="modal-header bg-grey text-light">
                                                             <h5 class="modal-title" id="exampleModalLabel">#quote1582769</h5>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            ...
+                                                        <table className=' bg-light p-2  shadow text-blue table-responsive'>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>ID</th>
+                                                                            <th>Name</th>
+                                                                            <th>Last Name</th>
+                                                                            <th>Email</th>
+                                                                            <th>Phone Number</th>                                                                            
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>ID</td>
+                                                                            <td>Name</td>
+                                                                            <td>Last Name</td>
+                                                                            <td>Email</td>
+                                                                            <td>Phone Number</td>                                                                            
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-primary">Pay Now</button>
+                                                            <button type="button" class="btn btn-success">Negotiate</button>
                                                         </div>
                                                         </div>
                                                     </div>

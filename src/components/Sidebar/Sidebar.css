@@ -29,18 +29,18 @@
     padding-left: 1rem;
     display: block;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: smaller;
 }
 .sidebar-menu a.active{
     background-color: #fff;
     color: var(--main-color);
-    padding-top: 1rem ;
-    padding-bottom: 1rem;
-    border-top-left-radius: 1.875rem;
-    border-bottom-left-radius: 1.875rem;
+    padding-top: .5rem ;
+    padding-bottom: .5rem;
+    border-top-left-radius: 0.875rem;
+    border-bottom-left-radius: 0.875rem;
 }
 .sidebar-menu a span:first-child {
-    font-size: 1.5rem;
+    font-size: small;
     padding-right: 1rem;
 }
 

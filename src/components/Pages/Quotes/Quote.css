@@ -29,7 +29,6 @@ th{
 /* react-tabs styling */
 .react-tabs {
     -webkit-tap-highlight-color: red;
-    width:40vw !important;
   }
   
   .react-tabs__tab-list {

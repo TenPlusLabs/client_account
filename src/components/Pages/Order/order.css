@@ -1,5 +1,6 @@
 .cards{
     background-color: #fff;
+    width:100% !important;
  }
  .cards>h2{
      padding: 1.2rem;
@@ -8,6 +9,34 @@
  .cards>hr{
      color: rgb(226, 225, 225);
  }
+
+.round-circle-complete{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:green !important;
+}
+
+.round-circle-Incomplete{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:yellow !important;
+}
+
+.round-circle-InProgress{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:purple !important;
+}
+
+.round-circle-notStarted{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:red !important;
+}
 
  .order-tab {
     overflow: hidden;
@@ -90,6 +119,7 @@
     padding:1.5rem;
     margin-top: 1.2rem;
     margin-bottom: 1rem;
+    width:100% !important;
 }
 .order-image{
     width: 5rem;

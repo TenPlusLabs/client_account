@@ -12,6 +12,8 @@ import Address from './components/Pages/Address-book/Address';
 import Quote from './components/Pages/Quotes/Quote';
 import Invoice from './components/Pages/Invoice/Invoice'
 import Funds from './components/Pages/Funds/Funds'
+import Ticket from './components/Pages/Ticket/Ticket.js'
+import PendingReview from './components/Pages/Pending-review/Pending-review.js'
 
 
 const App = () => {
@@ -30,9 +32,9 @@ const App = () => {
         <Route exact path='/details' element={<Details/>}/>
         <Route exact path='/order' element={<Order/>}/>
         <Route exact path='/message' element={<Details/>}/>
-        <Route exact path='/ticket' element={<Order/>}/>
+        <Route exact path='/ticket' element={<Ticket/>}/>
         <Route exact path='/quotes' element={<Quote/>}/>
-        <Route exact path='/pending-reviews' element={<Details/>}/>
+        <Route exact path='/pending-reviews' element={<PendingReview/>}/>
         <Route exact path='/address-book' element={<Address/>}/>
         <Route exact path='/change-password' element={<Password/>}/>
         <Route exact path='/logout' element={<Order/>}/>

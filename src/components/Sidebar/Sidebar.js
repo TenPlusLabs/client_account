@@ -39,7 +39,7 @@ const Sidebar = () => {
                                     Billings
                                 </NavLink>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
                                     <NavLink class="dropdown-item text-dark" to="quotes">Quotes</NavLink>
                                     <NavLink  class="dropdown-item  text-dark" to="invoice">Invoice</NavLink>
                                     <NavLink  class="dropdown-item text-dark" to="add-funds">Add Funds</NavLink>
@@ -57,6 +57,10 @@ const Sidebar = () => {
                         <li>
                             <NavLink to="address-book"><span class="las la-circle"></span>
                             <span>Address Book</span></NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="support"><span class="las la-clipboard-list"></span>
+                            <span>Support</span></NavLink>
                         </li>
                         <li>
                             <NavLink to="change-password"><span class="las la-circle"></span>

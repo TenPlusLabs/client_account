@@ -50,6 +50,10 @@
     transition: 1s;
 }
 
+.carousel-item{
+    width: 50% !important;
+}
+
 @media only screen and (max-width:560px){
     .review-button button{
         padding: .5rem 1rem;
