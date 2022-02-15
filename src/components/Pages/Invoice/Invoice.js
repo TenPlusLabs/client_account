@@ -42,7 +42,7 @@ const Invoice = (props) => {
              <div class="cards">
                      <h2>Quotes</h2>
                      <hr/>
-                     <div className=''>
+                    <div className=''>
                          <div className=''>
                             <div className=' container-fluid bg-white p-5'>                        
                                 <div class='row '>

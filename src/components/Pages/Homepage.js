@@ -34,7 +34,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartOne/>
                                             </div>
@@ -49,12 +49,12 @@ function Homepage() {
                             <div class='col-md-4 shadow'>
                                 <h3 class='p-2'>Tasks</h3>
                                     <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                    <p type="button" class="btn " data-toggle="modal" data-target="#xampleModal">
                                     <ChartTwo/>
                                 </p>
                                 
                                 {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="xampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                         <div class="modal-header">
@@ -63,7 +63,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartTwo/>
                                             </div>
@@ -78,12 +78,12 @@ function Homepage() {
                             <div class='col-md-4 shadow'>
                                 <h3 class='p-2'>Workload</h3>
                                     <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleMoal">
                                     <ChartThree/>
                                 </p>
                                 
                                 {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleMoal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                         <div class="modal-header">
@@ -92,7 +92,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartThree/>
                                             </div>
@@ -107,12 +107,12 @@ function Homepage() {
                             <div class='col-md-4 shadow mt-4 mb-3'>
                                 <h3 class='p-2'>Time</h3>
                                 <hr/>
-                                <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                <p type="button" class="btn " data-toggle="modal" data-target="#exampeModal">
                                     <ChartFour/>
                                 </p>
                                 
                                 {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                         <div class="modal-header">
@@ -121,7 +121,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartFour/>
                                             </div>
@@ -136,12 +136,12 @@ function Homepage() {
                             <div class='col-md-4 shadow mt-4 mb-3'>
                                 <h3 class='p-2'>Progress</h3>
                                     <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                    <p type="button" class="btn " data-toggle="modal" data-target="#examleModal">
                                     <ChartFive/>
                                 </p>
                                 
                                 {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="examleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                         <div class="modal-header">
@@ -150,7 +150,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartFive/>
                                             </div>
@@ -165,12 +165,12 @@ function Homepage() {
                             <div class='col-md-4 shadow mt-4 mb-3'>
                                 <h3 class='p-2'>Health</h3>
                                     <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
+                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModa">
                                     <ChartSix/>
                                 </p>
                                 
                                 {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                         <div class="modal-header">
@@ -179,7 +179,7 @@ function Homepage() {
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body p-5">
+                                        <div class="modal-body p-5 w-100">
                                             <div class='p-5'>
                                                 <ChartSix/>
                                             </div>

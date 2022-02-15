@@ -34,6 +34,10 @@ const Sidebar = () => {
                             <span>Pending Reviews</span></NavLink>
                         </li>
                         <li>
+                            <NavLink to="coupon"><span class="las la-clipboard-list"></span>
+                            <span>Coupon</span></NavLink>
+                        </li>
+                        <li>
                             
                                 <NavLink to='' class="btn dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
                                     Billings
