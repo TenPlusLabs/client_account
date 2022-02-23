@@ -43,6 +43,14 @@
     border-bottom: 1px solid #ccc !important;
     background-color: #fff !important;
   }
+
+  .bg-order-dark{
+    background:var(--main-color);
+  }
+
+  .orange-bg{
+    color: gold;
+  }
   
   /* Style the buttons that are used to open the tab content */
   .order-tab button {

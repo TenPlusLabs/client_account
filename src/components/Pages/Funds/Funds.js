@@ -15,14 +15,7 @@ const Funds = (props) => {
                          <div className=''>
                             <div className=' container-fluid bg-white p-5'>                        
                                 <div class='row '>
-                                 {/* right hand container */}
-                                    <div class='width-30'>                                        
-                                        <div className='card-notsingle bg-primary text-light rounded border  text-secondary'>
-                                            <p>You have 1 unpaid invoicewith a total balance of</p>
-                                            <br/>
-                                            <h4>N2500.00 </h4>
-                                        </div>
-                                    </div>
+                                 
                                     {/* left hand container */}
                                     <div class='width-70'>
                                         <div class='d-flex '>
@@ -48,21 +41,21 @@ const Funds = (props) => {
                                                                     <p class='text-secondary'>Payment Method:</p>
                                                                     <div class="form-group">
                                                                         <label for="exampleFormControlSelect1"></label>
-                                                                        <select class="form-control-lg border-grey" id="exampleFormControlSelect1">
-                                                                            <option class='p-2'>Paystack (Subscription)</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
+                                                                        <select class="form-control-lg select border-grey" id="exampleFormControlSelect1">
+                                                                            <option class='p-2 option'>Paystack (Subscription)</option>
+                                                                            <option class='p-2 option'>2</option>
+                                                                            <option class='p-2 option'>3</option>
+                                                                            <option class='p-2 option'>4</option>
+                                                                            <option class='p-2 option'>5</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class='d-block'>
                                                                         <p class='text-secondary text-left'>Amount to Add: </p>
                                                                         <div class='d-flex form-group'>
-                                                                            <button class='funds-button btn text-bold p-2'>N15</button>
-                                                                            <button class='funds-button btn text-bold p-2'>N50</button>
-                                                                            <button class='funds-button btn text-bold p-2'>N75</button>
-                                                                            <button class='funds-button btn text-bold p-2'>N100</button>
+                                                                            <button class='funds-button form-control btn text-bold p-2'>N15</button>
+                                                                            <button class='funds-button form-control btn text-bold p-2'>N50</button>
+                                                                            <button class='funds-button form-control btn text-bold p-2'>N75</button>
+                                                                            <button class='funds-button form-control btn text-bold p-2'>N100</button>
                                                                         </div>
                                                                     </div>
                                                                     <div class='form-group d-flex'>
@@ -74,13 +67,7 @@ const Funds = (props) => {
                                                         </TabPanel>
                                                     </Tabs>
                                                 </div>
-                                                <form>
-                                                    <div class='form-group mb-5'>
-                                                        {/* <input type="search" class='form-control' placeholder="Search here"/> */}
-                                                        <small class='text-secondary'>Deposite money in advance</small>
-                                                    </div>
-                                                </form>
-
+                                                
 
 
                                                 {/*.................................... modal ......................................*/}
@@ -108,6 +95,22 @@ const Funds = (props) => {
                                                 {/*................................... end of modal................................. */}
                                             
                                         </div>
+                                    </div>
+                                    {/* right hand container */}
+                                    <div class='width-30'>                                        
+                                        <div className='card-notsingle bg-main text-light rounded border  text-secondary'>
+                                            <p>You have a total balance of</p>
+                                            <br/>
+                                            <h4>N2500.00 </h4>
+                                            <button type="button" class="btn btn-primary">Withdraw</button>
+                                        </div>
+                                        <form>
+                                                    <div class='form-group mb-5 mt-4'>
+                                                        <input type="search" class='form-control' placeholder="Search here"/>
+                                                        <small class='text-secondary'>Deposite money in advance</small>
+                                                    </div>
+                                                </form>
+
                                     </div>
                                 </div>
                  </div>

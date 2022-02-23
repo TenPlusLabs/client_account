@@ -1,11 +1,8 @@
 import React from 'react';
 import './Homepage.css'
-import ChartOne from './Charts/ChartOne.js'
 import ChartTwo from './Charts/ChartTwo.js'
-import ChartThree from './Charts/ChartThree.js'
-import ChartFour from './Charts/ChartFour';
-import ChartFive from './Charts/ChartFive';
-import ChartSix from './Charts/ChartSix';
+import {Link} from 'react-router-dom'
+
 
 function Homepage() {
     return (
@@ -14,212 +11,69 @@ function Homepage() {
                 <h2>Account Overview</h2>
                 <hr/>
                 <div className='card-container'>
-                    
                     <div class='container-fluid'>
-                        <div class='row justify-content-between'>
-                            <div class='col-md-4 shadow'>
-                                <h3 class='p-2'>Costs</h3>
-                                <hr/>
-                                <p type="button" class="btn " data-toggle="modal" data-target="#exampleModal">
-                                    <ChartOne/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Costs</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartOne/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
+                        <div class='row p-3 justify-content-between'>
+                            <div class='col-md-6 col-sm-12'>
+                                <div class='row justify-content-between'>
+                                    <div class='col-md-12 shadow p-4'>
+                                        <p class='h5'>Total Principal Lent</p>
+                                        <h5 class='text-secondary h5 text-center m-auto'>$1,068,110.00</h5>
+                                    </div>
+                                    <div class='col-md-6 shadow p-5 mt-5'>
+                                        <p class='h5'>No of Loans 5 days past due</p>
+                                        <h3 class='text-center m-auto'>2</h3>
+                                    </div>
+                                    <div class='col-md-6 shadow p-5 mt-5'>
+                                        <p class='h5'>Browser 5days past due</p>
+                                        <br/>
+                                        <small class='d-block text-secondary'>browser email</small>
+                                        <small class='d-block text-secondary'>browser email</small>
+                                        <small class='d-block text-secondary'>browser email</small>
+
                                     </div>
                                 </div>
+
                             </div>
-                            <div class='col-md-4 shadow'>
-                                <h3 class='p-2'>Tasks</h3>
-                                    <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#xampleModal">
-                                    <ChartTwo/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="xampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Tasks</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartTwo/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='col-md-4 shadow'>
-                                <h3 class='p-2'>Workload</h3>
-                                    <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleMoal">
-                                    <ChartThree/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleMoal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Workload</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartThree/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='col-md-4 shadow mt-4 mb-3'>
-                                <h3 class='p-2'>Time</h3>
-                                <hr/>
-                                <p type="button" class="btn " data-toggle="modal" data-target="#exampeModal">
-                                    <ChartFour/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="exampeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Time</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartFour/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='col-md-4 shadow mt-4 mb-3'>
-                                <h3 class='p-2'>Progress</h3>
-                                    <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#examleModal">
-                                    <ChartFive/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="examleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Progress</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartFive/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='col-md-4 shadow mt-4 mb-3'>
-                                <h3 class='p-2'>Health</h3>
-                                    <hr/>
-                                    <p type="button" class="btn " data-toggle="modal" data-target="#exampleModa">
-                                    <ChartSix/>
-                                </p>
-                                
-                                {/* modal to zoom image */}
-                                <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Health</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body p-5 w-100">
-                                            <div class='p-5'>
-                                                <ChartSix/>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class='col-md-6 col-sm-12 shadow p-3'>
+                                <p class='h5 p-2'>Principal Borrower State</p>
+                                <small class='text-secondary mb-4 p-2 d-block'>Showing Top 7 in borrowing state</small>
+                                <ChartTwo/>
                             </div>
                         </div>
                     </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
-                    </div>
-                    <div className='card-single'>
-                        <p>Account Details <span className='las la-pen'></span></p>
-                        <hr/>
-                        <p className='name'>kolade elizabeth</p>
-                        <p className='email'>email@mail.com</p>
-                        <p className='homepage-link'>change password</p>
+                    <div class='container-fluid'>
+                        <div class='row p-3 justify-content-between'>                    
+                            <div className='col-md-6 card-single'>
+                                <p>Account Details <span className='fas fa-pen'></span></p>
+                                <hr/>
+                                <p className='name'>kolade elizabeth</p>
+                                <p className='email'>email@mail.com</p>
+                                <Link to='/change-password' className='homepage-link'>change password</Link>
+                            </div>
+                            <div className=' col-md-6 card-single'>
+                                <p>Address Book<Link to='/address-book' className='fas fa-pen'></Link></p>
+                                <hr/>
+                                 <p className='email'>
+                                    Room a4, kikelomo runsewe hostel, university of ilorin
+                                    university of ilorin teaching hospital
+                                    </p><br/>                      
+                                <Link to='/address-book/address-form' className='homepage-link'>Edit Address</Link>
+                            </div><br/>
+                            <div className=' col-md-6 card-single bg-main text-light'>
+                                <p class='text-light'> Wallet Details</p>
+                                <hr/>
+                                <p className='name text-light'>You have a total balance of</p>
+                                 <h4>N2500.00 </h4>
+                                <button type="button" class="btn btn-primary">Withdraw</button>
+                            </div>
+                            {/* <div className=' col-md-6 card-single'>
+                                <p>Account Details <span className='fas fa-pen'></span></p>
+                                <hr/>
+                                <p className='name'>kolade elizabeth</p>
+                                <p className='email'>email@mail.com</p>
+                                <Link to='/change-password' className='homepage-link'>change password</Link>
+                            </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

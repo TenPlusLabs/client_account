@@ -4,10 +4,11 @@
 } */
 .address-button{
     width: 20% !important;
-    padding: 1rem 2rem;
+    padding: .50rem ;
     background-color: var(--main-color) !important;
     color:#fff !important;
     border: none;
     border-radius: 4px;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
+    display: block;
 }

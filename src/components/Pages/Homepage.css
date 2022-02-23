@@ -24,11 +24,10 @@ main{
     margin-top: 1rem;
 }
 .card-single{
-    width: 30vw;
+    width: 70%;
     min-height: 25vh ;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 2rem;
     padding: 0.75rem;
 }
 .card-single>p,
@@ -37,7 +36,7 @@ main{
     text-transform: uppercase;
     color: rgb(68, 68, 68);
 }
-.la-pen, .la-trash{
+.fa-pen, .fa-trash{
     float: right;
     color: #27abe2;
     font-size: 1rem;
@@ -95,6 +94,29 @@ main{
         min-height: calc(100vh - 5.625rem);
         width: 85vw;
         margin-left: 15vw;
+    }
+    .card-single{
+        width: 100%;
+        min-height: 25vh ;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 1.5rem;
+        padding: 1rem;
+    }
+    .cards>h2{
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    main{
+        margin-top: 5.313rem;
+        padding: 2rem 1.5rem; 
+        background: #f1f5f9;
+        min-height: calc(100vh - 5.625rem);
+        width: calc(100vh - 5.625rem);
+        margin-left: -10vw;
     }
     .card-single{
         width: 100%;

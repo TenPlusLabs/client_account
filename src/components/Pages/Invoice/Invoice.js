@@ -2,31 +2,23 @@ import React from 'react'
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
 
 const Rows = [
-    {id:1, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
-    {id:2, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
-    {id:3, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
-    {id:4, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
-    {id:5, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
-    {id:6, name:'TenPlus Labs', last_name:'AJAPswenky', email:'05-01-2021', phone_number:'0', company_total_orders:'2021/05/05', active_orders:'0', country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'}
+    {id:1, email:'05-01-2021', phone_number:'0', wallet_amount:'paid', order_amount:'view'},
+    {id:2, email:'05-01-2021', phone_number:'0', wallet_amount:'not paid', order_amount:'view'},
+    {id:3, email:'05-01-2021', phone_number:'0', wallet_amount:'paid', order_amount:'view'},
+    {id:4, email:'05-01-2021', phone_number:'0', wallet_amount:'paid', order_amount:'view'},
+    {id:5, email:'05-01-2021', phone_number:'0', wallet_amount:'not paid', order_amount:'view'},
+    {id:6, email:'05-01-2021', phone_number:'0', wallet_amount:'paid', order_amount:'view'}
 ]
 
 const Table = (props) =>{
-    const {id, name,last_name,email,phone_number,company_total_orders, active_orders, country, state, customer, wallet_amount, order_amount}  = props;
+    const {id, email,phone_number, wallet_amount, order_amount}  = props;
    
        return(        
 
         <tr>
-            <td>{id}</td>
-            <td className='name'> {name}</td>
-            <td>{last_name}</td>
+            <td>{id}</td>           
             <td>{email}</td>
             <td>{phone_number}</td>
-            <td>{company_total_orders}</td> 
-            <td>{active_orders}</td>
-            <td>{name}</td>
-            <td>{country}</td>
-            <td>{state}</td>
-            <td>{customer}</td>
             <td>{wallet_amount}</td>
             <td><button class='btn-sm btn-primary' data-toggle="modal" data-target="#exampleModal">{order_amount}</button></td>
         </tr>
@@ -40,22 +32,22 @@ const Invoice = (props) => {
     return (
         <main>            
              <div class="cards">
-                     <h2>Quotes</h2>
-                     <hr/>
-                    <div className=''>
+                     {/* <h2>Quotes</h2>
+                     <hr/> */}
+                    {/* <div className=''>
                          <div className=''>
                             <div className=' container-fluid bg-white p-5'>                        
-                                <div class='row '>
+                                <div class='row '> */}
                                  {/* right hand container */}
-                                    <div class='width-30'>                                        
+                                    {/* <div class='width-30'>                                        
                                         <div className='card-notsingle bg-primary text-light rounded border  text-secondary'>
                                             <p>You have 1 unpaid invoicewith a total balance of</p>
                                             <br/>
                                             <h4>N2500.00 </h4>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* left hand container */}
-                                    <div class='width-70'>
+                                    {/* <div class='width-70'>
                                         <div class='d-flex '>
                                                 <div class='d-block'>
                                                     <h2 class='mb-5'>My Invoice</h2>
@@ -108,13 +100,13 @@ const Invoice = (props) => {
                                                         <input type="search" class='form-control' placeholder="Search here"/>
                                                         <small class='text-secondary'>Your invoice history here with us</small>
                                                     </div>
-                                                </form>
+                                                </form> */}
 
 
 
                                                 {/*.................................... modal ......................................*/}
 
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                {/* <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                         <div class="modal-header bg-grey">
@@ -132,15 +124,130 @@ const Invoice = (props) => {
                                                         </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
 
                                                 {/*................................... end of modal................................. */}
                                             
-                                        </div>
+                                        {/* </div>
                                     </div>
                                 </div>
                  </div>
                  </div>
+            </div> */}
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-md-12 p-3'>
+                        <div class='row'>
+                            <div class='col-md-8'>
+                               <h3> Invoice</h3>
+                            </div>
+                            <div class='col-md-4'>
+                                <div className='card-notsingle bg-main text-light rounded border  text-secondary'>
+                                    <p>You have 1 unpaid invoicewith a total balance of</p>
+                                    <br/>
+                                    <h4>N2500.00 </h4>
+                                    <button type="button" class="btn btn-primary">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-12 p-3'>
+                        <div class='row'>
+                            <div class='col-md-8'>
+                                <div class='d-block'>
+                                    <h2 class='mb-5'>My Invoice</h2>
+                                    <Tabs>
+                                        <TabList className='tab'>
+                                            <Tab id='tab'> 
+                                                <p class=" active text-secondary">Portal home/ </p>
+                                            
+                                            </Tab>
+                                            <Tab>
+                                            <p class="text-secondary">Client Area/ </p>
+                                            </Tab>
+                                            <Tab>
+                                                <p class='text-secondary'>My Quote</p>
+                                            </Tab>
+                                        </TabList>
+                                    </Tabs>
+                                </div>
+                            </div>
+                            <div class='col-md-4'>
+                                <form>
+                                    <div class='form-group mb-5'>
+                                        <input type="search" class='form-control' placeholder="Search here"/>
+                                        <small class='text-secondary'>Your invoice history here with us</small>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-12 '>
+                        
+                            <div className='col-12'>
+                                <table className=' bg-light p-5 width-100 shadow text-blue table-responsive'>
+                                    <thead>
+                                        <tr>
+                                            <th>Invoice</th>
+                                            <th>Invoice Date</th>
+                                            <th>Due Date</th>
+                                            <th>Total</th>
+                                            <th>status</th>                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {Rows.map((Row) =>
+                                <Table key={Row.id} id={Row.id} email={Row.email} phone_number={Row.phone_number}  wallet_amount={Row.wallet_amount} order_amount={Row.order_amount} />
+                                )} 
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+                    </div>
+                    {/*.................................... modal ......................................*/}
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header bg-grey">
+                                <h5 class="modal-title" id="exampleModalLabel">#invoice1582769</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table className=' bg-light p-2  shadow text-blue table-responsive'>
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Description</th>
+                                            <th>Amount</th>                                                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Deluxe(25GB) Linux Shared Hosting -tenpluslabs.com(25/09/2021 - 26/10/2021)</td>
+                                            <td>2,300.00</td>                                                                           
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Deluxe(25GB) Linux Shared Hosting -tenpluslabs.com(26/10/2021 - 26/11/2021)</td>
+                                            <td>2,300.00</td>                                                                           
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Pay Now</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*................................... end of modal................................. */}
+                </div>
             </div>
              </div>                
         </main>

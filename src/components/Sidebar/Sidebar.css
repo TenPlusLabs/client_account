@@ -70,3 +70,47 @@
 .mt-link-3{
     margin-top: 1.5rem;
 }
+.dropdown-menu{
+    background-color: var(--main-color);
+    padding: 1rem;
+    width:95%;
+    /* opacity:.5; */
+}
+
+.dropdown-item{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.dropdown-item:hover{
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.btn-dropdown{
+    background-color: none;
+    color:#fff;
+    width: 95%;
+    text-align: left;
+    margin-left: 1rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-dropdown:hover{
+    background-color: #fff;
+    color:var(--main-color);
+}
+
+@media only screen and (max-width: 750px){
+    #sidebar{
+        width:5.563rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: var(--main-color) ;
+        z-index: 100;
+        transition: width 300ms;
+    }
+}

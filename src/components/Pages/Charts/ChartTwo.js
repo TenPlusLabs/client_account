@@ -8,7 +8,7 @@ class ChartTwo extends Component {
 
     this.state = {
       options: {},
-      series: [44, 55, 41, 17, 15],
+      sers: [44, 55, 41, 17, 15],
       labels: ['A', 'B', 'C', 'D', 'E']
     }
   }
@@ -17,7 +17,7 @@ class ChartTwo extends Component {
 
     return (
       <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="300" />
+        <Chart options={this.state.options} series={this.state.sers} type="donut" width="330" />
       </div>
     );
   }

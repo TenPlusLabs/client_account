@@ -1,6 +1,5 @@
 import React from 'react'
 import './Sidebar.css'
-
 import { NavLink } from "react-router-dom";
 
 
@@ -19,7 +18,7 @@ const Sidebar = () => {
                     <ul>
                         <li>
                             <NavLink to="/" ><span class="las la-igloo"></span>
-                            <span>My Account</span></NavLink>
+                            <span>Overview</span></NavLink>
                         </li>
                         <li>
                             <NavLink to="order" class=""><span class="las la-users"></span>
@@ -37,19 +36,27 @@ const Sidebar = () => {
                             <NavLink to="coupon"><span class="las la-clipboard-list"></span>
                             <span>Coupon</span></NavLink>
                         </li>
+                         <li>
+                            <NavLink to="billings"><span class="las la-clipboard-list"></span>
+                            <span>Billings</span></NavLink>
+                        </li>
                         <li>
-                            
-                                <NavLink to='' class="btn dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                                    Billings
-                                </NavLink>
-
-                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
-                                    <NavLink class="dropdown-item text-dark" to="quotes">Quotes</NavLink>
-                                    <NavLink  class="dropdown-item  text-dark" to="invoice">Invoice</NavLink>
-                                    <NavLink  class="dropdown-item text-dark" to="add-funds">Add Funds</NavLink>
+                            <NavLink to="card"><span class="las la-clipboard-list"></span>
+                            <span>Card</span></NavLink>
+                        </li>
+                        {/* <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Billings
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <NavLink class="dropdown-item " to="quotes">Quotes</NavLink>
+                                        <NavLink  class="dropdown-item  " to="invoice">Invoice</NavLink>
+                                        <NavLink  class="dropdown-item " to="add-funds">Add Funds</NavLink>
+                                    </div>
                                 </div>
                             
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink to="messages"><span class="las la-circle"></span>
                             <span>Messages</span></NavLink>

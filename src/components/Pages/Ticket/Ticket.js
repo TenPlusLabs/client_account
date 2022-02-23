@@ -30,9 +30,6 @@ const Ticket = () => {
                                     <p className='status'>Delivered</p>
                                     <p> on 24-09-19</p>
                                 </div>
-                                <div className='order-button'>
-                                    <button>Rate this Product</button>
-                                </div>
                             </div>
                             <div className='order-container'>
                                 <div className='order-image'></div>
@@ -41,9 +38,6 @@ const Ticket = () => {
                                     <p>Order no: 34561234</p>
                                     <p className='status'>Delivered</p>
                                     <p> on 24-09-19</p>
-                                </div>
-                                <div className='order-button'>
-                                    <button>Rate this Product</button>
                                 </div>
                             </div>
                             <Stack spacing={2}>
@@ -59,9 +53,6 @@ const Ticket = () => {
                                     <p className='n-status'>Not-delivered</p>
                                     <p> on 24-09-19</p>
                                 </div>
-                                <div className='order-button'>
-                                    <button>Rate this Product</button>
-                                </div>
                             </div>
                             <div className='order-container mb-3'>
                                 <div className='order-image'></div>
@@ -70,9 +61,6 @@ const Ticket = () => {
                                     <p>Order no: 34561234</p>
                                     <p className='n-status'>Not-delivered</p>
                                     <p> on 24-09-19</p>
-                                </div>
-                                <div className='order-button'>
-                                    <button>Rate this Product</button>
                                 </div>
                             </div>
                             <Stack spacing={2}>
