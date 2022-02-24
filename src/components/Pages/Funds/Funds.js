@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Funds.css'
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
-
+import {Link} from 'react-router-dom'
+import Box from '@mui/material/Box';
+import TrapFocus from '@mui/material/Unstable_TrapFocus';
+import TextField from '@mui/material/TextField';
 
 const Funds = (props) => {
-    
+    const [open, setOpen] = React.useState(false);
+    const [palOpen, setPalOpen] = React.useState(false);
     
     return (
         <main>            
@@ -20,20 +24,19 @@ const Funds = (props) => {
                                     <div class='width-70'>
                                         <div class='d-flex '>
                                                 <div class='d-block'>
-                                                    <h2 class='mb-5'>Add Funds</h2>
                                                     <Tabs>
-                                                        <TabList className='tab'>
-                                                            <Tab id='tab'> 
-                                                                <p class=" active text-secondary">Portal home/ </p>
-                                                            
-                                                            </Tab>
-                                                            <Tab>
-                                                            <p class="text-secondary">Client Area/ </p>
-                                                            </Tab>
-                                                            <Tab>
-                                                                <p class='text-secondary'>My Quote</p>
-                                                            </Tab>
-                                                        </TabList>
+                                                    <TabList className='tab'>
+                                                        <Tab id='tab'> 
+                                                            <Link to='/' class=" active text-secondary">Dashboard/ </Link>
+                                                        
+                                                        </Tab>
+                                                        <Tab>
+                                                        <Link to='/billings' class="text-secondary">Bilings/ </Link>
+                                                        </Tab>
+                                                        <Tab>
+                                                            <Link to='/add-fund' class='text-secondary'>My Wallet</Link>
+                                                        </Tab>
+                                                    </TabList>
 
                                                         <TabPanel>
                                                             <div className='col-8 bg-white p-5'>
@@ -49,6 +52,12 @@ const Funds = (props) => {
                                                                             <option class='p-2 option'>5</option>
                                                                         </select>
                                                                     </div>
+                                                                    <div class='mt-3 mb-4'>
+                                                                        <p class='text-secondary'>Request Payout:</p>
+                                                                        <p class='btn btn-secondary bg-main' data-toggle="modal" data-target="#exampledal">click</p>
+                                                                    </div>
+                                                                    
+                                                                    <br/>
                                                                     <div class='d-block'>
                                                                         <p class='text-secondary text-left'>Amount to Add: </p>
                                                                         <div class='d-flex form-group'>
@@ -85,8 +94,74 @@ const Funds = (props) => {
                                                             ...
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Pay Now</button>
+                                                            <button  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button  class="btn btn-primary">Pay Now</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                {/*................................... end of modal................................. */}
+
+                                                 {/*....................................Request payout modal ......................................*/}
+
+                                                 <div class="modal fade" id="exampledal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header p-2">
+                                                          
+                                                            <button  class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class='container-fluid'>
+                                                                <div class='row align-items-center justify-content-center'>
+                                                                    <div class='col-md-6'>
+                                                                    <button  class='btn btn-secondary bg-main' onClick={() => setOpen(true)}>
+                                                                        Paystack
+                                                                    </button>
+                                                                    {open && (
+                                                                        <TrapFocus open>
+                                                                        <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
+                                                                            <label>
+                                                                            Bank Name: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                            Account Number: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                            Amount: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                            <input class='btn btn-secondary bg-main d-block mt-2' type='submit' />
+                                                                            </label>
+                                                                            <br />
+                                                                            <button  onClick={() => setOpen(false)}>
+                                                                            Close
+                                                                            </button>
+                                                                        </Box>
+                                                                        </TrapFocus>
+                                                                    )}
+                                                                    <button  class='btn btn-secondary bg-main' onClick={() => setPalOpen(true)}>
+                                                                        Paypal
+                                                                    </button>
+                                                                    {palOpen && (
+                                                                        <TrapFocus palopen>
+                                                                            <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
+                                                                                <label>
+                                                                                    <TextField id="standard-basic" label="Standard" variant="Bank Name" />
+                                                                                    <TextField id="standard-basic" label="Standard" variant="Account Number" />
+                                                                                    <TextField id="standard-basic" label="Standard" variant="Amount" />
+                                                                                </label>
+                                                                                <div class='d-flex justify-content-between'>
+                                                                                    <input class='btn btn-secondary bg-main d-block ' type='submit' />
+                                                                                    <button class='btn btn-secondary' onClick={() => setPalOpen(false)}> Close  </button>
+                                                                                </div>
+                                                                            </Box>
+                                                                        </TrapFocus>
+                                                                    )}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button  class="btn btn-primary">Pay Now</button>
                                                         </div>
                                                         </div>
                                                     </div>

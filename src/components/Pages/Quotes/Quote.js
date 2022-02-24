@@ -1,6 +1,7 @@
 import React from 'react'
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
 import './Quote.css'
+import {Link} from 'react-router-dom'
 
 const Rows = [
     {id:1, name:'TenPlus Labs',  country:'Algeria', state:'Okalhoma', customer:'chief', wallet_amount:'N900,000', order_amount:'view'},
@@ -41,129 +42,21 @@ const Quote = (props) => {
                      <div className=''>
                          <div className=''>
                             <div className=' container-fluid bg-white p-5'>                        
-                                <div class='row '>
-                                 {/* right hand container */}
-                                    {/* <div class='width-30'>                                        
-                                        <div className='card-notsingle bg-main text-light rounded border  text-secondary'>
-                                            <p>You have 1 unpaid invoicewith a total balance of</p>
-                                            <br/>
-                                            <h4>N2500.00 </h4>
-                                        </div>
-                                    </div> */}
-                                    {/* left hand container */}
-                                    {/* <div class='width-70'>
-                                        <div class='d-flex '>
-                                                <div class='d-block'>
-                                                    <h2 class='mb-5'>Quotes</h2>
-                                                    <Tabs>
-                                                        <TabList className='tab'>
-                                                            <Tab id='tab'> 
-                                                                <p class=" active text-secondary">Portal home/ </p>
-                                                            
-                                                            </Tab>
-                                                            <Tab>
-                                                            <p class="text-secondary">Client Area/ </p>
-                                                            </Tab>
-                                                            <Tab>
-                                                                <p class='text-secondary'>My Quote</p>
-                                                            </Tab>
-                                                        </TabList>
-
-                                                        <TabPanel>
-                                                            <div className='col-8'>
-                                                                <table className=' bg-light p-5 width-100 shadow text-blue table-responsive'>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>ID</th>
-                                                                            <th>Name</th>
-                                                                            <th>Name</th>
-                                                                            <th>Country</th>
-                                                                            <th>State</th>
-                                                                            <th>Customer</th>
-                                                                            <th>Wallet Amount</th>
-                                                                            <th>Order Amount</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                    {Rows.map((Row) =>
-                                                                <Table key={Row.id} id={Row.id} email={Row.email} phone_number={Row.phone_number} company_total_orders={Row.company_total_orders} last_name={Row.last_name} active_orders={Row.active_orders} name={Row.name} country={Row.country} state={Row.state} customer={Row.customer} wallet_amount={Row.wallet_amount} order_amount={Row.order_amount} />
-                                                                )} 
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </TabPanel>
-                                                    </Tabs>
-                                                </div>
-                                                <form>
-                                                    <div class='form-group mb-5'>
-                                                        <input type="search" class='form-control' placeholder="Search here"/>
-                                                        <small class='text-secondary'>Your quote history here with us</small>
-                                                    </div>
-                                                </form> */}
-
-
-
-                                                {/*.................................... modal ......................................*/}
-{/* 
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header bg-grey text-light">
-                                                            <h5 class="modal-title" id="exampleModalLabel">#quote1582769</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                        <table className=' bg-light p-2  shadow text-blue table-responsive'>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>ID</th>
-                                                                            <th>Name</th>
-                                                                            <th>Last Name</th>
-                                                                            <th>Email</th>
-                                                                            <th>Phone Number</th>                                                                            
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>ID</td>
-                                                                            <td>Name</td>
-                                                                            <td>Last Name</td>
-                                                                            <td>Email</td>
-                                                                            <td>Phone Number</td>                                                                            
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Pay Now</button>
-                                                            <button type="button" class="btn btn-success">Negotiate</button>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
-
-                                                {/*................................... end of modal................................. */}
-                                            
-                                        {/* </div>
-                                    </div> */}
+                                <div class='row '>                                
                                     <div class='col-md-12'>
                                         <div class='row'>
-                                            <div class='col-md-8'>
-                                                <h2 class='mb-5'>Quotes</h2>
+                                            <div class='col-md-8 mb-n5'>
                                                     <Tabs>
                                                         <TabList className='tab'>
                                                             <Tab id='tab'> 
-                                                                <p class=" active text-secondary">Portal home/ </p>
+                                                                <Link to='/' class=" active text-secondary">Dashboard/ </Link>
                                                             
                                                             </Tab>
                                                             <Tab>
-                                                            <p class="text-secondary">Client Area/ </p>
+                                                            <Link to='/billings' class="text-secondary">Billings/ </Link>
                                                             </Tab>
                                                             <Tab>
-                                                                <p class='text-secondary'>My Quote</p>
+                                                                <Link to='/quote' class='text-secondary'>My Quote</Link>
                                                             </Tab>
                                                         </TabList>
                                                     </Tabs>
@@ -180,11 +73,8 @@ const Quote = (props) => {
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='row d-flex justify-content-between'>
-                                            <div class='col-md-8'>
-                                                <Tabs>
-                                                    <TabPanel>
-                                                        <div className='col-8'>
-                                                            <table className=' bg-light p-5 width-100 shadow text-blue table-responsive'>
+                                            <div class='col-md-8 mt-n5'>
+                                                            <table className=' bg-light pr-5 width-100 shadow text-blue table-responsive'>
                                                                 <thead>
                                                                     <tr>
                                                                         <th>ID</th>
@@ -203,9 +93,6 @@ const Quote = (props) => {
                                                             )} 
                                                                 </tbody>
                                                             </table>
-                                                        </div>
-                                                    </TabPanel>
-                                                </Tabs>
                                             </div>
                                             <div class='col-md-4'>
                                                 <form>

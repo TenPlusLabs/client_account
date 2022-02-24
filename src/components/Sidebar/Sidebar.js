@@ -41,6 +41,14 @@ const Sidebar = () => {
                             <span>Billings</span></NavLink>
                         </li>
                         <li>
+                            <NavLink to="saved-items"><span class="las la-clipboard-list"></span>
+                            <span>Saved Item</span></NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="cart"><span class="las la-clipboard-list"></span>
+                            <span>Cart</span></NavLink>
+                        </li>
+                        <li>
                             <NavLink to="card"><span class="las la-clipboard-list"></span>
                             <span>Card</span></NavLink>
                         </li>

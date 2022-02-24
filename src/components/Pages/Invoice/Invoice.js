@@ -1,6 +1,8 @@
 import React from 'react'
 import { TabList, TabPanel, Tab, Tabs } from 'react-tabs';
 
+import { Link } from 'react-router-dom'
+
 const Rows = [
     {id:1, email:'05-01-2021', phone_number:'0', wallet_amount:'paid', order_amount:'view'},
     {id:2, email:'05-01-2021', phone_number:'0', wallet_amount:'not paid', order_amount:'view'},
@@ -136,37 +138,36 @@ const Invoice = (props) => {
             </div> */}
             <div class='container-fluid'>
                 <div class='row'>
-                    <div class='col-md-12 p-3'>
+                    <div class='col-md-12 '>
                         <div class='row'>
-                            <div class='col-md-8'>
+                            <div class='col-md-12 p-4 shadow'>
                                <h3> Invoice</h3>
-                            </div>
-                            <div class='col-md-4'>
-                                <div className='card-notsingle bg-main text-light rounded border  text-secondary'>
-                                    <p>You have 1 unpaid invoicewith a total balance of</p>
+                               <div class='float-right d-flex mt-n3'>
+                                    <p>You have 1 invoice with a total balance of: &nbsp; </p>
                                     <br/>
                                     <h4>N2500.00 </h4>
-                                    <button type="button" class="btn btn-primary">Pay Now</button>
-                                </div>
+                                    <button type="button" class="btn-sm ml-3 btn-primary">Pay Now</button>
+                               </div>                               
+                            </div>
+                            <div class='col-md-4'>
                             </div>
                         </div>
                     </div>
-                    <div class='col-md-12 p-3'>
+                    <div class='col-md-12 p-3 mt-2'>
                         <div class='row'>
                             <div class='col-md-8'>
-                                <div class='d-block'>
-                                    <h2 class='mb-5'>My Invoice</h2>
+                                <div class='d-block mb-n5'>
                                     <Tabs>
                                         <TabList className='tab'>
                                             <Tab id='tab'> 
-                                                <p class=" active text-secondary">Portal home/ </p>
+                                                <Link to='/' class=" active text-secondary">Dashboard/ </Link>
                                             
                                             </Tab>
                                             <Tab>
-                                            <p class="text-secondary">Client Area/ </p>
+                                            <Link to='/billings' class="text-secondary">Bilings/ </Link>
                                             </Tab>
                                             <Tab>
-                                                <p class='text-secondary'>My Quote</p>
+                                                <Link to='/invoice' class='text-secondary'>My Invoice</Link>
                                             </Tab>
                                         </TabList>
                                     </Tabs>
@@ -185,7 +186,7 @@ const Invoice = (props) => {
                     <div class='col-md-12 '>
                         
                             <div className='col-12'>
-                                <table className=' bg-light p-5 width-100 shadow text-blue table-responsive'>
+                                <table className=' bg-light pl-5 width-100 shadow text-blue table-responsive'>
                                     <thead>
                                         <tr>
                                             <th>Invoice</th>
