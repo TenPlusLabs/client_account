@@ -43,14 +43,14 @@ function Homepage() {
                     </div>
                     <div class='container-fluid'>
                         <div class='row p-3 justify-content-between'>                    
-                            <div className='col-md-6 card-single'>
-                                <p>Account Details <span className='fas fa-pen'></span></p>
+                            <div className='col-md-5 card-single'>
+                                <p>Account Details <Link to='/billings' className='fas fa-pen'></Link></p>
                                 <hr/>
                                 <p className='name'>kolade elizabeth</p>
                                 <p className='email'>email@mail.com</p>
                                 <Link to='/change-password' className='homepage-link'>change password</Link>
                             </div>
-                            <div className=' col-md-6 card-single'>
+                            <div className=' col-md-5 card-single'>
                                 <p>Address Book<Link to='/address-book' className='fas fa-pen'></Link></p>
                                 <hr/>
                                  <p className='email'>
@@ -59,20 +59,14 @@ function Homepage() {
                                     </p><br/>                      
                                 <Link to='/address-book/address-form' className='homepage-link'>Edit Address</Link>
                             </div><br/>
-                            <div className=' col-md-6 card-single bg-main text-light'>
-                                <p class='text-light'> Wallet Details</p>
+                            <div className=' col-md-5 mt-5 card-single '>
+                                <p class=''> Wallet Details</p>
                                 <hr/>
-                                <p className='name text-light'>You have a total balance of</p>
+                                <p className='name '>You have a total balance of</p>
                                  <h4>N2500.00 </h4>
-                                <button type="button" class="btn btn-primary">Withdraw</button>
+                                <Link to='/add-funds' type="button" class="btn btn-primary">Withdraw</Link>
+                                <Link to='/add-funds' type="button" class="btn btn-primary ml-5">Add Fund</Link>
                             </div>
-                            {/* <div className=' col-md-6 card-single'>
-                                <p>Account Details <span className='fas fa-pen'></span></p>
-                                <hr/>
-                                <p className='name'>kolade elizabeth</p>
-                                <p className='email'>email@mail.com</p>
-                                <Link to='/change-password' className='homepage-link'>change password</Link>
-                            </div> */}
                         </div>
                     </div>
                 </div>

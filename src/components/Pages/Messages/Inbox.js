@@ -246,6 +246,7 @@ const Inbox = () => {
                                 <div class='d-block'>      
                                     <p class='d-block'>Request a call</p>                             
                                     <textarea type='text' col='2' row='2' class='form-control' placeholder='Enter your message' /><br/>
+                                    <input type='datetime-local' class='form-control mb-4' />
                                     <input type='submit' class='btn bg-dark btn-primary no-border'/>
                                 </div>
                             </form>
@@ -275,7 +276,7 @@ const Inbox = () => {
                                 <div class=''>  
                                     <p class='d-block'>Request a Video call</p>                                 
                                     <textarea type='text' col='2' row='2' class='form-control' placeholder='Enter your message to request for video call' /><br/>
-                                    <input type='date' class='form-control' />
+                                    <input type='datetime-local' class='form-control mb-4' />
                                     <input type='submit' class='btn bg-dark btn-primary no-border'/>
                                 </div>
                             </form>

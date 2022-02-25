@@ -14,6 +14,7 @@ header{
 header h2{
     color: #222;
 }
+
 header label span{
     font-size: 1.7rem;
     padding-right: 1rem;
@@ -25,6 +26,7 @@ header label span{
     display: flex;
     align-items: center;
     overflow-x: hidden;
+    float:right;
 }
 .search-wrapper span{
     display: inline-block;
@@ -41,6 +43,7 @@ header label span{
 .user-wrapper {
     display: flex;
     align-items: center;
+    margin-left: 2rem;
 }
 .user-wrapper img {
     border-radius: 50%;

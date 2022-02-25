@@ -5,7 +5,7 @@ const SavedItem = () => {
   return (
     <main>
         <div class='container-fluid cards p-5'>
-            <h3 class='mb-3 mt-2 p-2'>Cart(3)</h3>
+            <h3 class='mb-3 mt-2 p-2'>Saved Items(3)</h3>
             <hr/>
             <div class='row justify-content-between mt-3'>
                 <div class='col-md-3 col-sm-6 shadow p-4'>

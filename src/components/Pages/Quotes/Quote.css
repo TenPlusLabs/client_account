@@ -38,6 +38,10 @@ th{
   padding: 1.75rem;
 }
 
+.cursor-pointer{
+  cursor:pointer;
+}
+
 /* ...................react-tabs styling...................... */
 .react-tabs {
     -webkit-tap-highlight-color: red;

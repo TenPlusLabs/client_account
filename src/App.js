@@ -24,7 +24,8 @@ import Biling from './components/Pages/Billing/Biling';
 import Card from './components/Pages/Card/Card.js';
 import Payment from './components/Pages/Card/Payment.js';
 import SavedItem from './components/Pages/SavedItem/SavedItem.js' 
-import Cart from './components/Pages/SavedItem/Cart.js' 
+import Cart from './components/Pages/SavedItem/Cart.js'
+import Requestform from './components/Pages/Quotes/Requestform' 
 
 const App = () => {
 
@@ -61,6 +62,7 @@ const App = () => {
         <Route exact path='/card/card-form' element={<Payment/>} />
         <Route exact path='/saved-items' element={<SavedItem/>} />
         <Route exact path='/cart' element={<Cart/>} />
+        <Route exact path='/request-form' element={<Requestform/>} />
       </Routes>
       </div>
     </div>

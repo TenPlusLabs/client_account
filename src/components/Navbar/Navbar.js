@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return(
         <header className=''>
-             <h2>
+             <div class='w-100 align-items-center mt-n5'>
                 <label for="nav-toggle" >
                     <span class="las la-bars" ></span>
                 </label>
@@ -23,16 +23,16 @@ const Navbar = () => {
                     : null
                     }
                 </div>
-            </h2>
+            </div>
             <div className="search-wrapper">
                 <span class="las la-search"> </span>
                 <input type="search" placeholder="Search here"/>
             </div>
             <div className="user-wrapper">
                 <img src={img} alt="" width="30px" height="30px"/>
-                <div>
-                    <h4>John Doe</h4>
-                    <small>Super admin</small>
+                <div class='w-100'>
+                    <h4 style={{whiteSpace:'nowrap'}}>John Doe</h4>
+                    <small style={{whiteSpace:'nowrap'}}>Super admin</small>
                 </div>
             </div>
         </header>

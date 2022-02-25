@@ -38,6 +38,7 @@ const Quote = (props) => {
         <main>            
              <div class="cards">
                      <h2>Quotes</h2>
+                     <Link to='/request-form' class='float-right mt-n5 mr-4 btn btn-secondary bg-main text-light'>Request a quote</Link>
                      <hr/>
                      <div className=''>
                          <div className=''>

@@ -41,10 +41,13 @@ const Funds = (props) => {
                                                         <TabPanel>
                                                             <div className='col-8 bg-white p-5'>
                                                                 <form class='text-center m-auto'>
-                                                                    <p class='text-secondary'>Payment Method:</p>
-                                                                    <div class="form-group">
-                                                                        <label for="exampleFormControlSelect1"></label>
-                                                                        <select class="form-control-lg select border-grey" id="exampleFormControlSelect1">
+                                                                    <div class='mt-3 mb-4 d-flex'>
+                                                                        <p class='text-secondary'>Request Payout:</p>
+                                                                        <p class='btn btn-secondary bg-main ml-2' data-toggle="modal" data-target="#exampledal">click</p>
+                                                                    </div>
+                                                                    <div class="form-group input-group d-flex">
+                                                                        <p class='text-secondary'>Payment Method:</p>
+                                                                        <select class="form-control-lg select border-grey ml-2" id="exampleFormControlSelect1">
                                                                             <option class='p-2 option'>Paystack (Subscription)</option>
                                                                             <option class='p-2 option'>2</option>
                                                                             <option class='p-2 option'>3</option>
@@ -52,10 +55,7 @@ const Funds = (props) => {
                                                                             <option class='p-2 option'>5</option>
                                                                         </select>
                                                                     </div>
-                                                                    <div class='mt-3 mb-4'>
-                                                                        <p class='text-secondary'>Request Payout:</p>
-                                                                        <p class='btn btn-secondary bg-main' data-toggle="modal" data-target="#exampledal">click</p>
-                                                                    </div>
+                                                                    
                                                                     
                                                                     <br/>
                                                                     <div class='d-block'>
@@ -82,7 +82,7 @@ const Funds = (props) => {
                                                 {/*.................................... modal ......................................*/}
 
                                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
+                                                    <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                         <div class="modal-header bg-grey">
                                                             <h5 class="modal-title" id="exampleModalLabel">#quote1582769</h5>
@@ -106,7 +106,7 @@ const Funds = (props) => {
                                                  {/*....................................Request payout modal ......................................*/}
 
                                                  <div class="modal fade" id="exampledal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
+                                                    <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                         <div class="modal-header p-2">
                                                           
@@ -124,14 +124,16 @@ const Funds = (props) => {
                                                                     {open && (
                                                                         <TrapFocus open>
                                                                         <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
-                                                                            <label>
-                                                                            Bank Name: <TextField id="standard-basic" label="Standard" variant="standard" />
-                                                                            Account Number: <TextField id="standard-basic" label="Standard" variant="standard" />
-                                                                            Amount: <TextField id="standard-basic" label="Standard" variant="standard" />
-                                                                            <input class='btn btn-secondary bg-main d-block mt-2' type='submit' />
-                                                                            </label>
+                                                                            <form>
+                                                                                <label>
+                                                                                Bank Name: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                                Account Number: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                                Amount: <TextField id="standard-basic" label="Standard" variant="standard" />
+                                                                                <input class='btn btn-secondary bg-main d-block mt-2' type='submit' />
+                                                                                </label>
+                                                                            </form>
                                                                             <br />
-                                                                            <button  onClick={() => setOpen(false)}>
+                                                                            <button class='btn btn-secondary bg-main' onClick={() => setOpen(false)}>
                                                                             Close
                                                                             </button>
                                                                         </Box>
@@ -141,17 +143,19 @@ const Funds = (props) => {
                                                                         Paypal
                                                                     </button>
                                                                     {palOpen && (
-                                                                        <TrapFocus palopen>
+                                                                        <TrapFocus palOpen>
                                                                             <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
-                                                                                <label>
-                                                                                    <TextField id="standard-basic" label="Standard" variant="Bank Name" />
-                                                                                    <TextField id="standard-basic" label="Standard" variant="Account Number" />
-                                                                                    <TextField id="standard-basic" label="Standard" variant="Amount" />
-                                                                                </label>
-                                                                                <div class='d-flex justify-content-between'>
+                                                                                <form>
+                                                                                    <label>
+                                                                                        <TextField id="standard-basic" label="Standard" variant="Bank Name" />
+                                                                                        <TextField id="standard-basic" label="Standard" variant="Account Number" />
+                                                                                        <TextField id="standard-basic" label="Standard" variant="Amount" />
+                                                                                    </label>
                                                                                     <input class='btn btn-secondary bg-main d-block ' type='submit' />
+                                                                                </form>
+                                                                                    
                                                                                     <button class='btn btn-secondary' onClick={() => setPalOpen(false)}> Close  </button>
-                                                                                </div>
+                                                                                
                                                                             </Box>
                                                                         </TrapFocus>
                                                                     )}
