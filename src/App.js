@@ -20,6 +20,8 @@ import Coupon from './components/Pages/Coupon/Coupon.js'
 import Messages from './components/Pages/Messages/Messages';
 import Inbox from './components/Pages/Messages/Inbox';
 import Support from './components/Pages/Support/Support';
+import SupportMainPage from './components/Pages/Support/SupportMainPage';
+import SupportNextPage from './components/Pages/Support/SupportNextPage';
 import Biling from './components/Pages/Billing/Biling';
 import Card from './components/Pages/Card/Card.js';
 import Payment from './components/Pages/Card/Payment.js';
@@ -53,7 +55,9 @@ const App = () => {
         <Route exact path='/invoice' element={<Invoice/>}/>
         <Route exact path='/add-funds' element={<Funds/>}/>
         <Route exact path='/coupon' element={<Coupon/>}/>
-        <Route exact path='/support' element={<Support/>}/>
+        <Route exact path='/support' element={<SupportMainPage/>}/>
+        <Route exact path='/support/support-ticket' element={<SupportNextPage/>} />
+        <Route exact path='/support/support-ticket/support-ticket-message' element={<Support/>} />
         <Route exact path='/address-book/address-form' element={<AddressBookForm/>}/>
         <Route exact path='/order/chart/gannt' element={<Gannt/>}/>
         <Route exact path='order/chart' element={<Chart/>} />

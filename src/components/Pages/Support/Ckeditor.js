@@ -1,9 +1,97 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-class Editor extends Component {
-    render() {
+
+
+
+
+
+const AddItem = () => {
+    const [items, setItems] = useState([
+        { itemName: ' 1', quantity: 1, isSelected: false },
+        { itemName: ' 2', quantity: 3, isSelected: true },
+        { itemName: ' 3', quantity: 2, isSelected: false },
+    ]);
+    const [inputValue, setInputValue] = useState('');
+
+    const handleAddButtonClick = () => {
+        const newItem = {
+            itemName: inputValue,
+            quantity: 1,
+            isSelected: false,
+        };
+    
+        const newItems = [...items, newItem];
+    
+        setItems(newItems);
+        setInputValue('');
+    };
+
+    const toggleComplete = (index) => {
+        const newItems = [...items];
+    
+        newItems[index].isSelected = !newItems[index].isSelected;
+    
+        setItems(newItems);
+    };
+
+
+  return (
+    <main>
+        <div class='cards container-fluid'>
+            <div class='row justify-content-between'>
+            <div className='add-item-box'>
+                <input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
+                <i class='fa fa-plus'  onClick={() => handleAddButtonClick()} />
+            </div>
+                 <div className='item-list'>
+                        {items.map((item, index) => (
+                            <div className='item-container'>
+                                <div className='item-name'>
+                                    {item.isSelected ? (
+                                       null
+                                    ) : (
+                                        <>
+                                            <div class='col-md-8 mt-1'>
+                                                <p class='text-secondary'>Attachments {item.itemName}</p>
+                                                <input type="file" id="myfile" name="myfile" class='form-control'/>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+            </div>
+        </div>
+    </main>
+  )
+}
+
+
+const Editor = () => { 
+
+    const [items, setItems] = useState([
+        
+    ]);
+    const [inputValue, setInputValue] = useState('');
+
+    const handleAddButtonClick = () => {
+        const newItem = {
+            itemName: inputValue,
+            quantity: 1,
+            isSelected: false,
+        };
+    
+        const newItems = [...items, newItem];
+    
+        setItems(newItems);
+        setInputValue('');
+    };
+
+
+
         return (
             <div className="App p-5 m-auto">
                 <form class='d-block m-auto'>
@@ -38,16 +126,49 @@ class Editor extends Component {
                         console.log( 'Focus.', editor );
                     } } class='height-support-50' 
                 />
+                    <div class='d-flex'>
+                        <div class='col-md-8 mt-1'>
+                            <p class='text-secondary'>Attachments</p>
+                            <input type="file" id="myfile" name="myfile" class='form-control' value={inputValue} onChange={(event) => setInputValue(event.target.value)} />
+                        </div>
+                        <div class='col-md-4'>
+                            <p class='btn btn-primary mt-5'onClick={() => handleAddButtonClick()}>Add More</p>                   
+                        </div>
+                    </div>
+                    <div className='item-list'>
+                        {items.map((item, index) => (
+                            <div className='item-container'>
+                                <div className='item-name'>
+                                    {item.isSelected ? (
+                                       null
+                                    ) : (
+                                        <>
+                                            <div class='col-md-8 mt-1'>
+                                                <p class='text-secondary'>Attachments {item.itemName}</p>
+                                                <div class='input-group'>
+                                                <input type="file" id="myfile" name="myfile" class='form-control'/>
+                                                <i class='fa fa-delete'/>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                     <div class='d-flex justify-content-between mt-4'>
                         <input type='submit' value='submit' class='btn btn-primary mr-4'/>
                         <button class='btn btn-primary '>Cancel</button>
                     </div>
+
+                    {/* .................................................................. */}
+                   {/* <AddItem/> */}
                 </form>
                 
                 
             </div>
         );
-    }
+
 }
 
 export default Editor;
