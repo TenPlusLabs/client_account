@@ -54,8 +54,66 @@ const Coupon = (props) => {
             <div class="cards">
                 <h2>Coupon(2)</h2>
                 <hr/>
+                <div class='container-fluid'>
+                    <div class='row p-4'>
+                        <div class='col-12 border mt-4'>
+                            <div class='row justify-content-between p-2'>
+                                <div class='col-md-2'>
+                                    <img src={pic} class='img-responsive img-fluid' alt='' />
+                                </div>
+                                <div class='col-md-7'>
+                                    <h4>
+                                    Jumia Nigeria Cupon: 10% off Men's Heel
+                                    </h4>
+                                    <p> By the usage of this promo code, enjoy an extra 10% discount on all men's heel. </p>
+                                </div>
+                                <div class='col-md-3'>
+                                   <div className='review-button'>
+                                        <button data-toggle="modal" data-target="#exampleModal">Reveal the Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-12 border mt-4'>
+                            <div class='row justify-content-between p-2'>
+                                <div class='col-md-2'>
+                                    <img src={pic} class='img-responsive img-fluid' alt='' />
+                                </div>
+                                <div class='col-md-7'>
+                                    <h4>
+                                    Jumia Nigeria Cupon: 10% off Men's Heel
+                                    </h4>
+                                    <p> By the usage of this promo code, enjoy an extra 10% discount on all men's heel. </p>
+                                </div>
+                                <div class='col-md-3'>
+                                   <div className='review-button'>
+                                        <button data-toggle="modal" data-target="#exampleModal">Reveal the Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-12 border mt-4'>
+                            <div class='row justify-content-between p-2'>
+                                <div class='col-md-2'>
+                                    <img src={pic} class='img-responsive img-fluid' alt='' />
+                                </div>
+                                <div class='col-md-7'>
+                                    <h4>
+                                    Jumia Nigeria Cupon: 10% off Men's Heel
+                                    </h4>
+                                    <p> By the usage of this promo code, enjoy an extra 10% discount on all men's heel. </p>
+                                </div>
+                                <div class='col-md-3'>
+                                   <div className='review-button'>
+                                        <button data-toggle="modal" data-target="#exampleModal">Reveal the Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className='review-card-container'>
-                    <div className='review-container'>
+                    {/* <div className='review-container'>
                         <div className='review-image'>
                             <img src={pic} alt='' class='img-responsive img-fluid'/>
                         </div>
@@ -80,7 +138,7 @@ const Coupon = (props) => {
                         <div className='review-button'>
                             <button data-toggle="modal" data-target="#exampleModal">Reveal the Code</button>
                         </div>
-                    </div>
+                    </div> */}
 
                      {/*..................... modal to zoom image............................... */}
 

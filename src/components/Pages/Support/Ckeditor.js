@@ -147,7 +147,7 @@ const Editor = () => {
                                                 <p class='text-secondary'>Attachments {item.itemName}</p>
                                                 <div class='input-group'>
                                                 <input type="file" id="myfile" name="myfile" class='form-control'/>
-                                                <i class='fa fa-delete'/>
+                                                <i class='fa fa-trash text-secondary ml-1'/>
                                                 </div>
                                             </div>
                                         </>

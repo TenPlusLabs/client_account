@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Editor from './Ckeditor.js'
 import './Support.css'
+import { Link } from 'react-router-dom'
 
 const Support = () => {
 
@@ -16,8 +17,9 @@ const Support = () => {
                     <div class='col-md-8'>
                         <div class='row'>
                             <div class='col-md-12 p-2 mt-2'>
+                                <Link to='/support' class='mb-3'><i class='fa fa-arrow-left'/>&nbsp;&nbsp;back to support page</Link>
                                 <h2>Support</h2>
-
+                                <h3 class=' mt-4 font-bold'>Ticket #YFA-277-23560 - Call Follow up- portal.tenpluslabs.com</h3>
                             </div>
                             <div class='mt-4'>
                                 {/* <div class="dropdown ">
@@ -87,8 +89,8 @@ const Support = () => {
                             <div class='col-md-12 mt-4 shadow'>
                                 <div class='mb-2 p-5'>
                                     <div class='float-left d-flex'>
-                                        <p>B Motunrayo E</p>
-                                        <p class='bg-blue text-primary rounded p-1 ml-2'>operator</p>
+                                        <p>Bolahan Abdullah</p>
+                                        <p class='bg-success text-light rounded p-1 ml-2'>owner</p>
                                     </div>
                                     {/* date and time */}
                                     <div class='float-right'>
@@ -105,6 +107,7 @@ const Support = () => {
                         </div>
                     </div>
                     <div class='col-md-4 p-2 '>
+                    <p class='font-bold mb-2'>Ticket Information</p>
                         <div class='p-2'>
                             <p class='text-secondary'>Requestor</p>
                             <p class=''>Thelma R</p>
@@ -137,6 +140,7 @@ const Support = () => {
                             <button class='btn btn-primary p-2 mr-3'>Reply</button>
                             <button class='btn btn-primary p-2 ml-3'>Close</button>
                         </div>
+                        <p class='font-bold mt-5'>Attachments</p>
                     </div>
                 </div>
             </div>

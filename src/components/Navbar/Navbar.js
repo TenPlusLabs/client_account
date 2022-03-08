@@ -29,6 +29,7 @@ const Navbar = () => {
                 <input type="search" placeholder="Search here"/>
             </div>
             <div className="user-wrapper">
+                <p><i class='fa fa-bell' /></p> &nbsp; &nbsp;
                 <img src={img} alt="" width="30px" height="30px"/>
                 <div class='w-100'>
                     <h4 style={{whiteSpace:'nowrap'}}>John Doe</h4>

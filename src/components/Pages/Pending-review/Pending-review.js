@@ -13,6 +13,7 @@ const PendingReview = () => {
             <div class="cards">
                 <h2>Pending review(2)</h2>
                 <hr/>
+                
                 <div className='review-card-container'>
                     <div className='review-container'>
                         <div className='review-image'>
